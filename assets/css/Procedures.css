@@ -1,0 +1,540 @@
+/*	Note: CSS in approximate order of page elements, Top-Down
+	Min/Max-width media-queries grouped at bottom	*/
+
+.topic-index ul {
+	list-style: none;
+    margin: 0;
+	padding: 0;
+}
+.topic-index h1 {
+	display: inline-block;
+	font-family: "proxima_nova_rgbold", sans-serif;
+	font-weight: normal;
+	line-height: 2.2rem;
+	margin: 5px 15px 0 0;
+	padding: 0;
+	vertical-align: middle;
+}
+.column-left {
+	min-width: 1%;
+	width: 100%;
+}
+.column-right {
+    -webkit-flex: 0 0 300px;
+    -ms-flex: 0 0 300px;
+    flex: 0 0 300px;
+    margin: 40px 0 0 3.25rem;
+}
+.title-area {
+	padding-bottom: 15px;
+	border-bottom: solid 2px #d8d8d8;
+}
+.breadcrumb {
+    display: block;
+    height: 16px;
+    font-size: 0.875rem;
+	font-family: "proxima_nova_rgregular";
+	color: #007cb0;
+    margin-bottom: 20px;
+}
+.article-head {
+    color: #333132;
+    font-size: 1.2rem;
+    line-height: 1.5rem;	
+	text-transform: uppercase;
+}
+.change-specialty {    
+    color: #007cb0;
+    cursor: pointer;
+    border-radius: 3px;
+    border: solid 1px #007cb0;
+	font-size: .875rem;
+	margin: 5px 0 0 0;
+	padding: 4px 9px;
+    text-align: center;
+    display: inline-block;
+	vertical-align: middle;
+	transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+}
+.can-hover .change-specialty:hover, .touch-device .change-specialty:active {
+	background-color: #005b81;
+	border: solid 1px #005b81;
+	color: #fff;
+}
+.change-specialty-modal {
+    background: #000000;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 5000100;
+    -moz-opacity: 0.80;
+    filter: alpha(opacity=80);
+    transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100%;
+    height: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.show-specialty .change-specialty-modal {
+    opacity: 0.8;
+    visibility: visible;
+    transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+}
+.change-specialty-layer {
+	display: none;
+    left: 50%;
+	transform: translateX(-50%);
+    top: 20%;
+	width: 80%;
+	max-width: 935px;
+    position: absolute;
+	z-index: 5000200;
+    opacity: 1;
+    background-color: #fff;
+	border-radius: 3px;
+}
+.show-specialty .change-specialty-layer {
+	display: block;
+}
+.change-specialty-head {
+	background-color: #2f2148;
+	border: 1px solid #2f2148;
+	color: #fff;
+	font-size: 1.4375rem;
+	padding: 25px 20px;
+}
+.change-specialty-close {
+    background: url(https://img.medscapestatic.com/pi/reference/icons/icon-close_x_white.png) no-repeat;
+	background-size: 21px 21px;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    height: 21px;
+    width: 21px;
+}
+.change-specialty-items {
+	padding: 35px 45px;
+}
+.change-specialty-items a {
+	color: #2a2a2a;
+	display: block;
+	font-size: 1.0625rem;
+}
+.change-specialty-items li {
+	display: inline-block;
+	padding-bottom: 15px;
+	width: 100%;
+}
+.change-specialty-items ul {
+	column-width: 200px;
+	column-gap: 75px;
+}
+.topic-index-intro, .sort-select-wrap, .topic-list {
+	max-width: 660px;
+	margin: auto;
+}
+.topic-index-intro {
+	color: #2a2a2a;
+	font-size: 1.25rem;
+	line-height: 1.625rem;
+	margin-top: 35px;
+}
+.sort-select-wrap {
+    margin: 35px auto 25px;
+}
+.sort-select {
+	display: inline-block;
+	margin-top: 5px;
+}
+.sort-header {
+	color: #2a2a2a;
+	display: inline-block;
+	font-family: "proxima_nova_rgbold";
+	font-size: 1.25rem;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.sort-link {
+	font-size: 1.125rem;
+	color: #007cb0;
+	cursor: pointer;
+}
+.can-hover .sort-link:hover {
+	color: #005b81
+}
+.sort-link.selected, .can-hover .sort-link.selected:hover {
+	color: #000000;
+}
+.sort-link-divide {
+	display: inline-block;
+    width: 1px;
+    height: 32px;
+    margin: 0 13px;
+    border-left: solid 1px #979797;
+	vertical-align: middle;
+}
+.alpha-select-wrap {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+.can-hover .alpha-select-wrap::-webkit-scrollbar {
+	 width: 5px;
+	 height: 13px;
+}
+.can-hover .alpha-select-wrap::-webkit-scrollbar-button {
+	 width: 0px;
+	 height: 0px;
+}
+.can-hover .alpha-select-wrap::-webkit-scrollbar-thumb {
+	 background: #808080;
+	 border-top: 8px solid #fff;
+}
+.can-hover .alpha-select-wrap::-webkit-scrollbar-track {
+	 background: transparent;
+	 border: 0px none transparent;
+}
+.can-hover .alpha-select-wrap::-webkit-scrollbar-corner {
+	 background: transparent;
+}
+.alpha-select {
+	box-sizing: border-box;
+	flex-shrink: 0;
+    border-radius: 3px;
+    color: #000;
+    cursor: pointer;
+    background-color: #fff;
+    border: solid 1px #e1e1e1;
+    overflow: hidden;
+    margin: 5px 6px 0 0;
+    text-align: center;
+    padding: 8px 0;
+	height: 40px;
+	width: 36px;
+}
+.can-hover .alpha-select:hover, .alpha-select.selected {
+    background-color: #005b81;
+	border: solid 1px #ccc;
+    color: #fff;
+}
+.alpha-select.disabled, .can-hover .alpha-select.disabled:hover {
+    background-color: #fff;
+    border: solid 1px #eee;
+    box-shadow: none;
+    color: #ddd;
+    cursor: default;
+}
+.swipe-instruction {
+	float: right;
+    font-size: 0.875rem;
+	font-family: "proxima_nova_rgregular";
+	color: #222222;    
+}
+.topic-expand {
+    color: #007cb0;
+    cursor: pointer;
+    border-radius: 4px;
+    border: solid 1px #007cb0;
+    font-size:.875rem;
+    text-align: center;
+	display: inline-block;
+	padding: 5px 10px;
+	width: 95px;
+	margin-bottom: 25px;
+	transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+}
+.can-hover .topic-expand:hover, .touch-device .topic-expand:active {
+	background-color: #005b81;
+	border: solid 1px #005b81;
+	color: #fff;
+}
+.topic-list {
+	display: none;
+	font-size: 1.25rem;
+}
+.topic-list.active {
+	display: block;
+}
+.topic-list li {
+	margin-bottom: 17px;
+}
+.topic-section {
+    padding: 17px 10px;
+    border-bottom: solid 1px #e9e9e9;
+    background: #fff url("/pi/reference/icons/icon-arrow-down-black.png") no-repeat;
+    background-position-x: 98%;
+    background-position-y: 25px;
+    background-size: 12px 7px;
+    font-family: 'proxima_nova_rgregular',arial,sans-serif;
+    border-radius: 0;
+	color: #2a2a2a;
+    font-size: 1.25rem;
+}
+.topic-section:first-of-type {
+    border-top: solid 1px #e9e9e9;
+}
+.can-hover .topic-section:hover {
+    background-color: #e9e9e9;
+}
+.topic-section.expanded {
+	background: #fff url("/pi/reference/icons/icon-arrow-up-black.png") no-repeat;
+    background-position-x: 98%;
+    background-position-y: 25px;
+    background-size: 12px 7px;
+}
+.can-hover .topic-section.expanded:hover {
+    background-color: #fff;
+}
+.topic-section ul {
+    margin: 17px 0 0 0;
+	display: none;
+}
+.topic-section.expanded ul {
+	display: block;
+}
+.topic-head {
+	cursor: pointer;
+    font-family: "proxima_nova_rgbold",arial,sans-serif;
+	max-width: 100%;
+	padding-right: 7%;
+}
+.topic-alpha-wrap {
+	margin-top: 25px;
+}
+.chief-editor {
+	margin-bottom: 40px;
+}
+.chief-editor-head {
+	border-bottom: solid 2px #d8d8d8;
+	font-family: "proxima_nova_ltlight", arial, sans-serif;
+	font-size: 1.25rem;
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+}
+.chief-editor ul li  {
+	font-size: .9375rem;
+	margin-bottom: 15px;
+}
+.back-to-top {
+	display: none;
+    width: 70px;
+    height: 70px;
+    color: #fff;
+    z-index: 9999;
+    overflow: hidden;
+    position: fixed;
+    cursor: pointer;
+    background-color: rgba(0, 91, 129, .6);
+    right: 30%;
+    bottom: 70px;
+    text-align: center;
+    border-radius: 50%;
+    text-transform: uppercase;
+}
+.arrow-up {
+	width: 100%;
+	margin: 8px 0 1px;
+	height: 20px;
+	background-image: url(/pi/global/icons/icon-arrow-rightstatus-white.png);
+	background-size: 17px auto;
+	background-repeat: no-repeat;
+	background-position: top center;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+.back-to-top-text {
+	letter-spacing: 1px;
+	margin-left: 1px;
+}
+
+/* Cancer Guides */
+
+	.cancer_guides .rightAd  {
+		display: none;
+	}
+	.ifi-bucket {
+		width: 307px;
+		border: solid 1px #ccc;
+		margin: 16px 0;
+	}	
+	.ifi-bucket-head {
+		background-color: #fdfcfa;
+		border-bottom: solid 1px #ccc;
+		text-transform: uppercase;
+		padding: 7px 0 7px 8px;
+	}	
+	.ifi-bucket-head-txt {
+		display: inline-block;
+		font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+		font-size: 1rem;
+		color: #005b81;
+		font-weight: 300;
+		vertical-align: middle;
+	}	
+	.ifi-bucket-head-txt {
+		display: inline-block;
+		font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+		font-size: 1rem;
+		color: #005b81;
+		font-weight: 300;
+		vertical-align: middle;
+	}	
+	.ifi-bucket-cont {
+		padding: 16px 16px 0 16px;
+	}	
+	.ifi-bucket-cont-list {
+		font-family: 'proxima_nova_rgregular', arial, sans-serif;
+		font-size: 1rem;
+		list-style-type: none;
+	}	
+	.collaboration {
+		border: 1px solid #ccc;
+		padding: 10px;
+	}
+	.collaboration h4 {
+		font-size: .96rem;
+		margin: 0;
+	}
+	.collaboration-credit {
+		font-size: .75rem;
+	}
+	.collaboration-text {
+		font-size: .8125rem;
+		margin: 10px 0;
+	}
+	.collaboration img {
+		display: block;
+		margin: auto;
+	}
+	.red-bold {
+		color: #cc0000;
+		font-weight: bold;
+	}	
+	.topic-list .red-bold {
+		font-size: .875rem;
+	}	
+	.topic-list  li .red-bold {
+		padding-left: 5px;
+	}		
+	.column-right .bucket {
+		margin-top: 30px;
+	}
+	.column-right .bucket h3 {	
+		border-bottom: solid 2px #d8d8d8;
+		font-family: "proxima_nova_ltlight", arial, sans-serif;
+		font-size: 1.25rem;
+		margin-bottom: 15px;
+		padding-bottom: 5px;
+		text-transform: uppercase;
+	}
+	.column-right .bucket .featimg {
+		float: left;
+		margin: 2px 7px 0 0;
+		width: 72px;
+	}
+	.column-right .bucket .title {
+		font-family: "proxima_nova_ltsemibold",sans-serif;
+		font-size: 1.0625rem;
+		padding-bottom: 3px;
+	}
+	.column-right .bucket .teaser {
+		font-size: .875rem;
+		padding-bottom: 2px;
+	}	
+	.column-right .bucket .byline {
+		font-size: .8125rem;
+	}
+	.column-right .bucket li {
+		margin-bottom: 15px;
+	}
+	.popular-guide ol {
+	    padding-left: 27px;
+		list-style-position: outside;
+	}
+	.popular-guide li {
+		margin-bottom: 10px;
+		padding: 0 0 0 10px;
+	}	
+	.marketing a {
+		display: inline-block;
+		margin-bottom: 20px;
+	}
+	.collaboration-credit {
+		display: none;
+	}
+	.topic-section.expanded .collaboration-credit, .topic-alpha-wrap .collaboration-credit {
+		display: block;
+	}
+	.collaboration-credit img {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.right-badge {
+		margin-bottom: 30px;
+	}
+/* /Cancer Guides */
+
+@media (max-width: 767px) {  
+	.topic-index {
+		display: block;
+	}	
+    .column-right {
+        display: block;
+		margin: 0;
+    }	
+    .article-head  {
+        display: none;
+    }	
+    .change-specialty-layer {
+		top: 0;
+		width: 100%;
+	}
+    .back-to-top {
+        width: 60px;
+        height: 60px;
+        right: 3%;
+        bottom: 50px;
+    }
+	.ifi-bucket, .popular-guide, .marketing {
+		display: none;
+	}
+}
+
+@media (min-width:768px) {
+	.alpha-select-wrap {
+		flex-wrap: wrap;
+		width: 100%;
+		max-width: 585px;
+		overflow: hidden;
+	}
+    .swipe-instruction {
+        display: none;
+    }
+}
+
+@media (min-width:1024px) {
+	.alpha-select {
+		margin: 5px 1% 0 0;
+		width: 6%;
+	}
+	.topic-index h1 {
+		font-size: 2rem;
+	}
+}

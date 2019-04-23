@@ -1,0 +1,43 @@
+.page-body{font-family:proxima_nova_ltlight,sans-serif}a,a:link{color:#007cb0}
+a,a:link,a:visited{text-decoration:none}
+a:visited{color:#5757a6}
+a:hover{color:#005b81;transition:all .35s ease}
+a:active,a:hover{text-decoration:none}
+a:active{color:#007cb0}
+
+.img {display: flex}
+#maincolboxdrugdbheader h1{margin:0;min-height:45px;padding:5px 15px 0 0}
+@media (max-width:1023px){#maincolboxdrugdbheader h1{font-size:1.875rem;line-height:1.975rem}}
+
+#drugdb .breadcrumb a:visited{color:#007cb0}
+
+#drugdb .breadcrumb .crumb-divider{padding:0 2px 0 6px;color:#999}
+
+#maincolboxdrugdbheader{padding:0 10px 10px}
+
+#maincolboxdrugdbheader.drug_h1{padding:0 5px 0 10px}
+
+#maincolboxdrugdbheader ul{list-style-image:none;list-style-type:none;padding:0;margin:5px 0 15px}
+
+#maincolboxdrugdbheader.notFirstSection .drugbrandname,#maincolboxdrugdbheader.notFirstSection ul{display:none}
+
+.brandNameLabel{list-style-image:none;list-style-type:none;padding:0 5px 0 0;margin:5px 0 15px}
+.author_link{font-size:13px}
+
+#medscapeheadercontainer a{color:#2672b8}
+.refsection_content{padding:0 0 10px}
+.next_btn,.next_btn_drug,.next_section_btn{float:right;display:inline-block;margin:25px 15px 15px}
+
+.next_btn_drug a,.next_btn a,.next_section_btn a{padding:8px 20px 8px 10px;font-family:proxima_nova_rgregular,sans-serif;font-size:1.5rem;color:#2a2a2a;max-width:270px;position:relative;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;display:block}
+
+.next_btn_drug a:after,.next_btn a:after,.next_section_btn a:after{position:absolute;display:block;content:" ";top:0;bottom:0;right:0;width:15px;text-transform:uppercase;background-image:url(/pi/reference/icons/icon-arrow-right-blue.svg);background-size:8px auto;background-repeat:no-repeat;background-position:100%}
+
+.next_btn_drug span,.next_btn a span,.next_section_btn a{color:#007cb0}
+
+.back_btn,.back_btn_drug{display:none}.sect2{margin-left:1px}
+
+.drugdbsectioncontent .sect2title,.sect2title{font-family:proxima_nova_ltsemibold,sans-serif;color:#888}
+
+.h1title{display:none}
+.drugdbsectioncontent ol,.drugdbsectioncontent p,.drugdbsectioncontent ul{font-family:proxima_nova_rgregular,sans-serif;font-size:1.125rem;line-height:1.375rem}
+/*# sourceMappingURL=dd-article-header.css.map */

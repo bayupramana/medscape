@@ -1,0 +1,2117 @@
+/*
+Modified 09/13/16 MG
+Last Modified 08/23/16 SC
+*/
+
+.AdUnit {
+	background-image: none;
+}
+
+.ab_test_reg_form #sec_regemailaddressconfirm, .ab_test_reg_form #sec_regusername, .ab_test_reg_form #sec_inviteCode, .ab_test_reg_form #sec_practiceSetting, .ab_test_reg_form #usmd_layer, .ab_test_reg_form #sec_npi, .ab_test_reg_form #sec_degree, .ab_test_reg_form .prof_16 #sec_medSchoolState, .ab_test_reg_form .prof_16 #sec_medSchool, .ab_test_reg_form .prof_16 #sec_regyeargrad {
+    display: none !important;
+}
+
+#ms-prof-reg .reg_hint, #ms-prof-reg .reg_heading {
+	display:none;
+}
+#ms-prof-reg, .reg-default, #registration_profile {
+	margin-right: auto;
+	margin-left: auto;
+	padding: 40px 0 20px 0;
+	font-family: 'proxima_nova_ltlight', arial, sans-serif;
+	overflow: hidden;
+}
+#ms-prof-reg h1, .reg-default h1, #registration_profile .reg_heading {
+	margin: 0;
+	padding: 0 0 20px 0;
+	font-family: 'proxima_nova_ltlight', arial, sans-serif;
+	font-size: 2.3em;
+	font-weight: normal;
+	color: #005b81;
+}
+#ms-prof-reg h2, .reg-default h2 {
+	margin: 0;
+	padding: 0 0 4px 0;
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.65em;
+	font-weight: normal;
+	line-height: 1.2em;
+}
+#ms-prof-reg h3, .reg-default h3 {
+	margin: 0;
+	padding: 0 0 4px 0;
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.6em;
+	font-weight: normal;
+	line-height: 1.5em;
+	color: #005b81;
+}
+#ms-prof-reg p, .reg-default p {
+	margin: 0;
+	padding: 0 0 15px 0;
+}
+#ms-prof-reg a, a {
+	color: #007cb1;
+}
+a:hover {
+	color:#005b81;
+}
+#ms-prof-reg ul, .reg-default ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#ms-prof-reg ul li, .reg-default ul li {
+	margin: 0;
+	padding: 0 0 20px 0;
+}
+#ms-prof-reg .reg-info {
+	padding: 0 0 6px 0;
+	color: #939393;
+	font-size: 1.15em;
+	overflow: hidden;
+}
+#ms-prof-reg .reg-info p {
+	margin: 0;
+	padding: 0 20px 0 0;
+	display: inline-block;
+}
+#ms-prof-reg .reg-info p.secure-reg, #ssl_info {
+	padding: 0 0 0 15px;
+	background: url("/pi/global/icons/icon-secure-lock.png") no-repeat;
+	background-position: left center;
+}
+
+.iap_reg_iaptransactionhistory_table {
+  display: table;         
+  width: auto;         
+  background-color: #e8ebf2;         
+  border: 1px solid #666666; 
+  border-radius: 3px;        
+  border-spacing: 5px; /* cellspacing:poor IE support for  this */
+}
+
+.iap_reg_iaptransactionhistory_row {
+  display: table-row;
+  width: auto;
+  clear: both;
+  background: #ccc; 
+}
+
+.iap_reg_iaptransaction_col {
+  float: left; 
+  display: table-column;         
+  width: 150px;         
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min-resolution:192dpi) {
+	#ms-prof-reg .reg-info p.secure-reg {
+		background: url("/pi/global/icons/icon-secure-lock-2x.png") no-repeat;
+		background-size: 9px 12px;
+	}
+}
+#about-prof-reg {
+	width: 346px;
+	float: right;
+}
+
+#about-prof-reg .about-section {
+	padding: 65px 0 20px 0;
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+
+#about-prof-reg .about-section.news {
+	background-image: url("/pi/global/icons/icon-reg-news.png");
+	width: 280px;
+}
+#about-prof-reg .about-section.news h2 {
+	width: 220px;
+}
+#about-prof-reg .about-section.ref {
+	background-image: url("/pi/global/icons/icon-reg-reference.png");
+	width: 300px;
+}
+
+#about-prof-reg .about-section.ref h2 {
+	width: 220px;
+}
+
+#about-prof-reg .about-section.edu {
+	background-image: url("/pi/global/icons/icon-reg-education.png");
+}
+
+#about-prof-reg .about-section h2 {
+	color: #000000;
+}
+@media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min-resolution:192dpi) {
+	#about-prof-reg .about-section.news {
+		background-image: url("/pi/global/icons/icon-reg-news-2x.png");
+		background-size: 50px 46px;
+	}
+	#about-prof-reg .about-section.ref {
+		background-image: url("/pi/global/icons/icon-reg-reference-2x.png");
+		background-size: 52px 46px;
+	}
+	#about-prof-reg .about-section.edu {
+		background-image: url("/pi/global/icons/icon-reg-education-2x.png");
+		background-size: 50px 48px;
+	}
+}
+#about-prof-reg p {
+	font-size: 1.4em;
+	color: #5d5c5c;
+}
+.footer-legal {
+	padding: 20px 0 50px 0;
+	font-size: 0.95em;
+	text-align: center;
+}
+
+/* modified registration styles from medscape-register.css */
+#ms-prof-reg #registration_left {
+	margin: 0;
+	padding: 0;
+	width: 515px;
+	float: left;
+}
+::-webkit-input-placeholder {
+	color: transparent;
+}
+:-moz-placeholder {
+	color: transparent;
+}
+::-moz-placeholder {
+	color: transparent;
+}
+:-ms-input-placeholder {
+	color: transparent;
+}
+.form_section {
+	margin: 0;
+	padding: 0;
+}
+.profreg-section, .form_section {
+	margin: 0 0 30px 0;
+	padding: 30px 50px;
+	background: #e8f0f8;
+}
+.form_section ul {
+    margin: 10px 0 0 0;
+    padding: 0 0 0 30px;
+    color:#555;
+}
+.reg_subsec {
+    margin: 0 0 18px 0;
+    padding: 0;
+    position: relative;
+}
+.formlabel {
+	padding: 0 0 2px 0;
+	font-family: 'proxima_nova_ltsemibold';
+	font-size: 1.4em;
+}
+.formlabel .text_optional {
+    color:#999;
+    font-style:italic;
+    font-weight:normal;
+}
+.form_section input {
+	padding: 10px 18px;
+	color: #333;
+	border: 1px solid #d1cfcf;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #fff;
+    background-repeat: no-repeat;
+	font-family: 'proxima_nova_ltlight', Arial, sans-serif;
+	font-size: 1.4em;
+	width: 410px;
+}
+.form_section input[type=radio]{
+  width   : 28px;
+  margin  : 10px 0 0 10px;
+  padding : 0;
+}
+.form_section input:focus, input:focus {
+	color: #000;
+	border: 1px solid #71a9cb;
+}
+.formfield select {
+	margin: 2px 0 4px 0;
+	padding: 10px 50px 10px 18px;
+	font-family: 'proxima_nova_ltlight', Arial, sans-serif;
+	font-size: 1.1em;
+    width: 410px;
+    height: 43px;
+    border: 1px solid #d1cfcf;
+    box-shadow: none;
+    /* background-image: url("/pi/global/ornaments/bg-select-field.png"); */
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right top;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+	border-radius: 0;
+    overflow: hidden;
+}
+
+/*PPE-89637*/
+.mscp-global select#specialty {
+	background-image: url("/pi/global/ornaments/bg-select-field.png");
+	background-size: 40px 41px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min-resolution:192dpi) {
+	.formfield select {
+		background-image: url("/pi/global/ornaments/bg-select-field-2x.png");
+		background-size: 40px 41px;
+	}
+	/*PPE-89637*/
+	.mscp-global select#specialty {
+		background-image: url("/pi/global/ornaments/bg-select-field-2x.png");
+		background-size: 40px 41px;
+	}
+}
+.formfield select::-ms-expand {
+	display: none;
+}
+.formfield_checkbox {
+	padding: 0 0 20px 0;
+}
+#remembermecheckboxdiv{
+	display:none;
+}
+#citylistwrapperdiv ul li{
+	padding:10px 0 10px 0;
+}
+.form_section input[type="checkbox"], #rememberrow input[type="checkbox"] {
+	display: none;
+}
+.form_section input[type="checkbox"] + label, #rememberrow input[type="checkbox"] + label  {
+	margin: 0;
+	padding: 3px 0 0 35px;
+	background-image: url("/pi/global/icons/icon-checkbox.png");
+	background-color: transparent;
+	background-position: 0 -219px;
+	background-repeat: no-repeat;
+	min-height: 21px;
+	display: block;
+}
+.form_section input[type="checkbox"]:checked + label, #rememberrow input[type="checkbox"]:checked + label {
+    background-image: url("/pi/global/icons/icon-checkbox.png");
+    background-position: top left;
+}
+@media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min-resolution:192dpi) {
+	.form_section input[type="checkbox"] + label, #rememberrow input[type="checkbox"] + label {
+		background-image: url("/pi/global/icons/icon-checkbox-2x.png");
+		background-color: transparent;
+		background-position: 0 -219px;
+		background-repeat: no-repeat;
+		background-size: 21px 240px;
+	}
+	.form_section input[type="checkbox"]:checked + label, #rememberrow input[type="checkbox"]:checked + label {
+    	background-image: url("/pi/global/icons/icon-checkbox-2x.png");
+   	 	background-position: top left;
+   	 	background-size: 21px 240px;
+	}
+}
+.form_section input[type="text"].zipcode,  #regzippractice {
+	width: 192px;
+}
+.form_section input[type="text"].email, #regemailaddress, #regemailaddressconfirm {
+	width: 346px;
+}
+.form_section input[type="text"].name, .form_section input[type="password"].password, #regpasswordconfirm, #regusername {
+	width: 260px;
+}
+
+.form_section input[type="text"]:read-only {
+    background-color:#c2c2c2;
+}
+
+.formfield select.autowidth {
+    width: auto;
+}
+.fixed_select {
+    width: 232px;
+}
+.formfield {
+    float: left;
+    width: 293px
+}
+.formfield input[type="button"] {
+	margin: 30px 0 40px 90px;
+	padding: 18px 0;
+	border: 0 none;
+	font-family: 'proxima_nova_rgregular', Arial, sans-serif;
+	font-weight: normal;
+	color: #fff;
+	cursor: pointer;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	background: #007cb1;
+	font-size: 1.6em;
+	width: 242px;
+}
+.formfield input[type="button"]:hover {
+	background: #005b81;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+  	transition: 0.5s;
+}
+
+.divInlineLink {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    z-index: 2;
+    cursor: pointer;
+    height: 15px;
+    font-family: Arial;
+    font-size: 12px;
+    color: #007cb0 !important;
+}
+.needsupport {
+    font-size: 1.1em;
+    font-family: Arial, sans-serif;
+    color: #4a4a4a;
+    text-align:center;
+}
+.autocomplete_city_ul{
+   width: 98.3%;
+   margin-top: 1%;
+   display: block; 
+   max-height:300px;
+   overflow:auto;
+   background-color:white;
+   position:relative;
+   z-index:32323;
+}
+.autocomplete_city_ul li:active{
+    background:#f5f5f5; 
+}
+.autocomplete_city_ul li:hover{
+    background:#f5f5f5; 
+}
+.autolookup_menu_item{
+  height: 1em;
+  padding:0.1em 1.2em;
+  font-family: 'proxima_nova_rgregular', Arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  vertical-align:middle;
+  color: #000000;
+}
+
+.profile_divInlineLink {
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    z-index: 2;
+    cursor: pointer;
+    height: 15px;
+    font-family: Arial;
+    font-size: 12px;
+    color: #007cb0 !important;
+}
+.profile_autocomplete_city_ul{
+   width: 82.1%;
+   margin-top: 1%;
+   display: block; 
+   max-height:250px;
+   overflow:auto;
+   background-color:white;
+}
+
+.city-autocomplete-li{
+	padding:10px 0 10px 0;
+}
+
+.profile_autocomplete_city_ul li:active{
+    background:#f5f5f5; 
+}
+.profile_autocomplete_city_ul li:hover{
+    background:#f5f5f5; 
+}
+.profile_autolookup_menu_item{
+  padding:0.4em 0.1em;
+  font-family: 'proxima_nova_rgregular', Arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  vertical-align:middle;
+  color: #000000;
+}
+ul#mailingcitydropdownul{
+	padding:0;
+}
+ul#officecitydropdownul {
+	padding:0;
+}
+ul#instituteCitydropdownul{
+	padding:0;
+}
+ul#workCitydropdownul{
+	padding:0;
+}
+#registration_main .formfield, #registration_profile .reg_focus .formfield, #reg_resetpassbox .reg_focus .formfield {
+    background: none;
+}
+#registration_main .profile_error .formfield, #registration_profile .profile_error .formfield, #reg_resetpassbox .profile_error .formfield {
+    background: none;
+}
+#registration_main .formfield.reg_green, #registration_profile .formfield.reg_green, #reg_resetpassbox .formfield.reg_green {
+    background: url("/pi/global/icons/icon-check-green.png") no-repeat scroll center right 3px transparent;
+}
+#registration_main .formfield.reg_red, #registration_profile .formfield.reg_red, #reg_resetpassbox .formfield.reg_red {
+    background: none;
+}
+ .formfield.reg_red input,  .formfield.reg_red select {
+/*	-moz-box-shadow: 0px 0px 10px #c4e5f9;
+  	-webkit-box-shadow: 0px 0px 10px #c4e5f9;
+  	box-shadow: 0px 0px 10px #c4e5f9;
+  	border: 1px solid #71a9cb;*/
+    border:1px solid #BB5555;
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min-resolution:192dpi) {
+	#registration_main .formfield.reg_green, #registration_profile .formfield.reg_green, #reg_resetpassbox .formfield.reg_green {
+    	background: url("/pi/global/icons/icon-check-green-2x.png") no-repeat scroll center right 3px transparent;
+    	background-size: 12px 12px;
+	}
+}
+#registration_main .formfield.reg_green.reg_nogreen {
+    background: none;
+}
+#registration_main .formfield.reg_red.reg_nogreen {
+    background: none;
+}
+#reg_submit .formfield {
+    width:auto;
+    padding: 0 25px 0 0;
+    background:none;
+}
+#reg_submit .formhint {
+    margin-top: 10px;
+    display: block;
+}
+#submit_hint {
+	margin-top:15px;
+}
+
+
+.formhint {
+    position: absolute;
+	top: 0;
+	left: 430px;
+	color: #000;
+	font-size: 1em;
+	min-width: 150px;
+	background-color: #caf7ff;
+	padding:10px;
+	font-family:'proxima_nova_ltlight', arial, sans-serif;
+	z-index:3;
+}
+
+#sec_inviteCode .formhint, #sec_submit .formhint {
+	min-width:300px;
+}
+.formfield.reg_red + .formhint {
+	background-color: #ed928b;
+}
+
+ .formhint:after {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+		border-right-color: #caf7ff;
+	border-width: 9px;
+	margin-top: -9px;
+}
+.formfield.reg_red + .formhint:after {
+	border-right-color: #ed928b;
+}
+.reg_focus .formhint:empty, #reg_submit .formhint:empty, .formhint:empty {
+	display:none;
+}
+.formhint *:empty {
+	display:none;
+}
+.formhint span {
+    padding: 10px 10px 8px 10px;
+    display: block;
+}
+.formhint .redtext {
+	color: #000;
+}
+.reg_focus .formhint {
+    display: block;
+}
+#sec_regzippractice .formhint {
+	left: 214px;
+}
+#sec_regemailaddress .formhint {
+	left: 375px;
+}
+#sec_regusername .formhint, #sec_regpassword .formhint, #sec_regpasswordconfirm .formhint {
+	left: 285px;
+}
+#sec_submit {
+	font-size: 1.1em;
+	font-family: Arial, sans-serif;
+	color: #4a4a4a;
+}
+#sec_submit p {
+	text-align: center;
+}
+#reg_resetpassbox {
+    background:url(/pi/reg/ornaments/bg-resetbox.png) repeat-x top left #cfc7b2;
+    border:1px solid #c3bba6;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+    -moz-box-shadow: 2px 2px 4px #999;
+    padding: 10px 25px 15px 15px;
+}
+#loginbox {
+    background:url(/pi/reg/ornaments/bg-resetbox.png) repeat-x top left #cfc7b2;
+    border:1px solid #c3bba6;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+    -moz-box-shadow: 2px 2px 4px #999;
+    padding: 10px 25px 15px 15px;
+    margin:10px;
+}
+#regtd {
+    padding:0 20px;
+    color:#494949;
+}
+#regtd ul li{
+    margin-bottom:15px;
+}
+#reg_emailformbox {
+    background:url(/pi/reg/ornaments/bg-resetbox.png) repeat-x top left #cfc7b2;
+    border:1px solid #c3bba6;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+    -moz-box-shadow: 2px 2px 4px #999;
+    padding: 15px 25px 25px 25px;
+}
+/*#reg_reset #reg_headerbox {
+    background:#fff;
+    height:auto;
+    padding:0;
+    border-bottom:3px solid #E7E3CF;
+    margin:0 0 20px 0;
+}*/
+.reg_content {
+    padding:0 7px;
+    font-size:1.1em;
+    margin-bottom:15px;
+}
+#rememberrow {
+	margin: 0 0 18px 0;
+	font-size: 0.9em;
+	display: block;
+}
+#rememberrow input {
+	width: auto !important;
+	float: left;
+}
+#rememberrow .formlabel2 {
+	margin: 0 0 0 8px;
+	display: inline;
+}
+.form_section p.legaltext {
+	margin: 20px 0 30px 0;
+	font-size: 1.05em;
+	text-align: left;
+	color: #aaa;
+}
+.form_section p.legaltext a {
+	color: #000;
+	text-decoration: underline;
+}
+ul.help li {
+	margin: 0;
+	padding: 0 0 10px 0;
+}
+
+#submitlostpass:disabled {
+    color:#999;
+}
+/*.reg_successtext {
+    color:#008807;
+    background:url(/pi/reg/ornaments/check.png) no-repeat center left;
+}
+.reg_unsuccesstext {
+    color:#a80000;
+}
+#reg_reset .reg_successtext {
+    padding:15px 0 25px 80px;
+    color:#000;
+}
+#reg_reset .reg_unsuccesstext ul {
+    margin:0 0 20px 0;
+}*/
+#submithintans {
+    background:url(/pi/reg/buttons/btn-reg-continue.png) no-repeat center;
+    border:none;
+    font-size:13px;
+    font-weight:bold;
+    color: #FFFFFF;
+    height: 35px;
+    cursor:pointer;
+    margin-left: 10px;
+    padding:0px 15px 5px 0;
+    text-shadow: 1px 1px 0 #000000;
+    width: 100px
+}
+#reg_post {
+    width:850px;
+    margin:auto;
+	margin-top:20px;
+}
+/*#reg_post .reg_successtext {
+    padding:15px 0 25px 70px;
+    font-size:1.3em;
+    float:left;
+    width:300px;
+    color:#000;
+    margin:20px 0 0 20px;
+}*/
+#reg_post_newletter_box {
+font-size:.9em;
+    padding:20px 0;
+    margin:0;
+}
+#reg_post_newletter_box p{
+    font-size:1.1em;
+}
+.reg_post_newletter_title {
+    font-size:1.6em;
+    font-weight:normal;
+    margin-bottom:10px;
+    color:#005b81;
+}
+.reg_post_newletter {
+    float:left;
+    width:250px;
+    margin:5px 25px 5px 0;
+}
+.newsletter-options .reg_post_newletter{
+	float:none;
+	width:auto;
+	margin:auto;
+}
+.reg_post_newletter_box1 {
+    margin:15px 0 0 0;
+}
+.reg_post_newletter_box1 .reg_post_newletter_title {
+    font-size:.95em;
+}
+.reg_post_newletter_box1 .reg_post_newletter {
+    float:none;
+    width:auto;
+    margin-right:0;
+}
+.repost_message {
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    -moz-box-shadow: 2px 2px 4px #999999;
+    background: url(/pi/reg/ornaments/bg-newsletter.png) repeat-x scroll center top #bbb;
+    border: 2px solid #094869;
+    padding:10px 20px;
+}
+#regpost_support {
+    margin-top:10px;
+    color: #444;
+    font-size: 0.9em;
+}
+#regpost_continuebtn a:hover {
+    text-decoration:none;
+}
+#reg_emailformbox .reg_subsec.reg_focus {
+    background:none;
+}
+.reg_newsletter_title {
+    font-weight:bold
+}
+label.reg_newsletter_title {
+	font-weight:normal;
+}
+.reg_newsletter_text {
+    color: #444;
+    font-size: 0.9em;
+    padding-left: 5px;
+}
+#passwordDescription {
+    margin:4px 100px 3px 0;
+    display:none;
+    padding-left:63px;
+    font-weight:bold;
+    height:15px;
+    float:left;
+    background:url(/pi/reg/ornaments/bg-regpass-grey.png) no-repeat center left;
+    display: none;
+}
+.reg_focus #passwordDescription {
+    display:block;
+    display: none;
+}
+#passwordDescription.Pshort {
+    background:url(/pi/reg/ornaments/bg-regpass-red.png) no-repeat center left;
+    color:#C00;
+    display: none;
+}
+#passwordDescription.Pinvalid {
+    background:url(/pi/reg/ornaments/bg-regpass-red.png) no-repeat center left;
+    color:#C00;
+    display: none;
+}
+#passwordDescription.Plevel1 {
+    background:url(/pi/reg/ornaments/bg-regpass-l1.png) no-repeat center left;
+    color:#008807;
+    display: none;
+}
+#passwordDescription.Plevel2 {
+    background:url(/pi/reg/ornaments/bg-regpass-l2.png) no-repeat center left;
+    color:#008807;
+    display: none;
+}
+#passwordDescription.Plevel3 {
+    background:url(/pi/reg/ornaments/bg-regpass-l3.png) no-repeat center left;
+    color:#008807;
+    display: none;
+}
+
+/* ------------------------------ */
+/* --- styles for other pages --- */
+/* ------------------------------ */
+
+/* buttons */
+#ms-prof-reg .button-blue , .button-blue, .reg-submit{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #007cb1;
+	font-family: 'proxima_nova_rgregular', Arial, sans-serif;
+	font-size: 1.7em;
+	text-align: center;
+	width: 330px;
+}
+#ms-prof-reg .button-blue:hover, .button-blue:hover {
+	background: #005b81;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+  	transition: 0.5s;
+}
+#ms-prof-reg .button-blue a {
+	padding: 14px 0;
+	display: inline-block;
+	width: 100%;
+	color: #fff;
+}
+#ms-prof-reg .button-blue a:hover {
+	text-decoration: none;
+}
+#ms-prof-reg .button-blue a span {
+	padding: 0 30px 0 0;
+	background: url("/pi/global/icons/icon-arrow-continue-white.png") no-repeat;
+	background-position: right center;
+	display: inline-block;
+}
+@media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min-resolution:192dpi) {
+	#ms-prof-reg .button-blue a span {
+		background: url("/pi/global/icons/icon-arrow-continue-white-2x.png") no-repeat;
+		background-position: right center;
+		background-size: 22px 7px;
+	}
+}
+#ms-prof-reg .button-white, .button-white {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #007cb1;
+	background: #fff;
+	font-family: 'proxima_nova_rgregular', Arial, sans-serif;
+	font-size: 1.7em;
+	text-align: center;
+	width: 330px;
+	color:#007cb1;
+}
+#ms-prof-reg .button-white:hover, .button-white:hover {
+	background: #007cb1;
+	color:white;
+}
+#ms-prof-reg .button-white a, .button-white a{
+	padding: 14px 0;
+	display: inline-block;
+	width: 100%;
+	color: #007cb1;
+}
+#ms-prof-reg .button-white a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+/* confirmation */
+#ms-prof-reg .confirmation {
+	margin: 0 0 30px 0;
+	padding: 40px 0;
+	border-bottom: 1px solid #d2cece;
+}
+#ms-prof-reg .confirmation p {
+	padding: 0 0 30px 0;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	color: #5d5d5d;
+}
+#ms-prof-reg .confirmation em {
+	font-family: 'proxima_nova_rgregular', Arial, sans-serif;
+	font-style: italic;
+}
+#ms-prof-reg .newsletter-options {
+	margin: 0 0 30px 0;
+	padding: 0 0 40px 0;
+	border-bottom: 1px solid #d2cece;
+}
+#ms-prof-reg .newsletter-options .options-left {
+	width: 55%;
+	float: left;
+}
+#ms-prof-reg .newsletter-options .options-right {
+	width: 45%;
+	float: right;
+}
+#de_confirm_options_right{
+	padding-top:10%;
+}
+#ms-prof-reg .options-left h3 {
+	padding: 0 160px 20px 0;
+}
+#ms-prof-reg .options-right h3 {
+	padding: 0 60px 20px 0;
+}
+#ms-prof-reg .other-languages h3 {
+	padding: 0 0 20px 0;
+}
+#ms-prof-reg .newsletter-options label, #ms-prof-reg .other-languages label {
+	font-size: 1.6em;
+}
+#ms-prof-reg .newsletter-options input[type="checkbox"] + label, #ms-prof-reg .other-languages input[type="checkbox"] + label {
+	padding: 0 10px 0 20px;
+}
+#ms-prof-reg .newsletter-options p {
+	padding: 3px 0 0 40px;
+	font-size: 1.35em;
+	line-height: 1.35em;
+	color: #5d5d5d;
+}
+#ms-prof-reg .newsletter-options .options-left p {
+	padding-right: 130px;
+}
+#ms-prof-reg .newsletter-options .options-right p {
+	padding-right: 60px;
+}
+#ms-prof-reg .saved-subscriptions, #ms-prof-reg .saved-languages {
+	padding: 20px 0 0 0;
+	position: relative;
+}
+#ms-prof-reg .saved-subscriptions .confirmation-message, #ms-prof-reg .saved-languages .confirmation-message {
+	padding: 16px 50px;
+	position: absolute;
+	left: 380px;
+	top: 20px;
+	background: #caf7ff;
+	color: #5c5c5c;
+	font-size: 1.6em;
+	display: none;
+}
+#ms-prof-reg .other-languages {
+	margin: 0 0 30px 0;
+	padding: 0 0 40px 0;
+	border-bottom: 1px solid #d2cece;
+}
+#ms-prof-reg .bottom-continue {
+	padding: 20px 0 80px 0;
+}
+
+/* login */
+#med_login {
+	padding: 40px 0;
+}
+#med_login #login_left {
+	width: 525px;
+	float: left;
+}
+#med_login #login_right {
+	width: 342px;
+	float: right;
+}
+
+#med_login #loginbox {
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: none;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	-moz-box-shadow: 0;
+}
+#med_login #loginpadding {
+	padding: 70px 100px 40px 100px;
+	background: #e8f0f8;
+	color: #484848;
+}
+#med_login a, #reg_reset a {
+	color: #007cb1;
+}
+#med_login h3 {
+	margin: 0;
+	padding: 0 0 20px 0;
+	font-family: 'proxima_nova_ltlight', arial, sans-serif;
+	font-size: 2.1em;
+	font-weight: normal;
+	color: #005b81;
+}
+#med_login h4 {
+	margin: 0;
+	padding: 0 0 15px 0;
+	font-family: 'proxima_nova_ltlight', arial, sans-serif;
+	font-size: 1.5em;
+	font-weight: normal;
+	color: #005b81;
+}
+#med_login ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#med_login ul li {
+	margin: 0;
+	padding: 0 0 15px 0;
+}
+#med_login .inputrow {
+	padding: 0 0 10px 0;
+}
+#med_login .inputrow .login_label {
+	font-family: 'proxima_nova_ltsemibold';
+	font-size: 1.25em;
+	display: block;
+}
+#med_login .inputrow input[type="text"], #med_login .inputrow input[type="password"],
+#reg_reset input[type="text"], #reg_resetpassbox input[type="password"], #password-required input[type="password"] {
+	padding: 10px 18px;
+	color: #333;
+	border: 1px solid #d1cfcf;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #fff;
+    background-repeat: no-repeat;
+	font-family: 'proxima_nova_ltlight', Arial, sans-serif;
+	font-size: 1.4em;
+	width: 260px;
+}
+#med_login .inputrow input[type="text"]:focus, #med_login .inputrow input[type="password"]:focus,
+#reg_reset input[type="text"]:focus, #reg_resetpassbox input[type="password"]:focus, #password-required input[type="password"]:focus {
+	color: #000;
+}
+#rememberrow {
+	margin: 0;
+	padding: 20px 0;
+	font-size: inherit;
+}
+#rememberrow input {
+	float: none;
+}
+#rememberrow .formlabel2 {
+	margin: 0;
+	display: block;
+}
+#med_login #acceptrow, #med_login #submitrow {
+	padding: 0 0 30px 0;
+}
+#med_login input[type="submit"], #med_login input[type="button"], #password-required input[type="submit"], input[type="button"], input[type="submit"] {
+	margin: 0 0 40px 40px;
+	padding: 18px 0;
+	border: 0 none;
+	font-family: 'proxima_nova_rgregular', Arial, sans-serif;
+	font-weight: normal;
+	color: #fff;
+	cursor: pointer;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	background: #007cb1;
+	font-size: 1.6em;
+	width: 242px;
+	-webkit-appearance: none;
+}
+input[type="button"].btn-white {
+	background:#fff;
+	color:#007cb1;
+	border:1px solid #007cb1;
+	box-sizing:border-box;
+}
+#med_login input[type="submit"]:hover, #med_login input[type="button"]:hover, input[type="submit"]:hover, input[type="button"]:hover, #password-required input[type="submit"]:hover {
+	background: #005b81;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+  	transition: 0.5s;
+}
+input[type="button"].btn-white:hover {
+	background:#005b81;
+	color:#fff;
+}
+#med_login input[type="button"] {
+	margin: 0 0 20px 4px;
+	width: 95%;
+}
+#med_login ul.help {
+	text-align: center;
+}
+#med_login ul.help li {
+	margin: 0 0 20px 0;
+	display: inline-block;
+}
+
+#med_login ul.help li:first-child {
+	margin: 0 20px 20px 0;
+	padding: 0 20px 0 0;
+	border-right: 1px solid #000;
+}
+
+#med_login ul.help li:last-child {
+	display: block;
+}
+#med_login #regtd {
+	padding: 0;
+	color: #666;
+}
+#med_login #login_right h3 {
+	padding: 0 0 1px 0;
+}
+#med_login #login_right h4 a {
+	text-transform: uppercase;
+	color: #005b81;
+}
+#med_login #login_right p {
+	font-family: 'proxima_nova_ltsemibold';
+	font-size: 1.2em;
+	color: #000;
+}
+#med_login #login_right ul {
+	font-family: 'proxima_nova_ltlight', Arial, sans-serif;
+	font-size: 1.05em;
+}
+#med_login #login_right ul li {
+	margin: 0 0 0 10px;
+	padding: 0 0 20px 52px;
+}
+#med_login #login_right ul li.newsBullet {
+	background: url("/pi/global/icons/icon-reg-news-tiny.png") no-repeat;
+	background-position: left 0 top 3px;
+}
+#med_login #login_right ul li.refBullet {
+	background: url("/pi/global/icons/icon-reg-reference-tiny.png") no-repeat;
+	background-position: left 0 top 3px;
+}
+
+#med_login #login_right ul li.eduBullet {
+	background: url("/pi/global/icons/icon-reg-education-tiny.png") no-repeat;
+	background-position: left 0 top 1px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min-resolution:192dpi) {
+	#med_login #login_right ul li.newsBullet {
+		background: url("/pi/global/icons/icon-reg-news-tiny-2x.png") no-repeat;
+		background-size: 34px 31px;
+		background-position: left 0 top 3px;
+	}
+	#med_login #login_right ul li.refBullet {
+		background: url("/pi/global/icons/icon-reg-reference-tiny-2x.png") no-repeat;
+		background-size: 35px 31px;
+		background-position: left 0 top 3px;
+	}
+	#med_login #login_right ul li.eduBullet {
+		background: url("/pi/global/icons/icon-reg-education-tiny-2x.png") no-repeat;
+		background-size: 34px 33px;
+		background-position: left 0 top 1px;
+	}
+}
+
+/* forgot password */
+#reg_reset {
+	padding: 40px 0;
+}
+#reg_reset .reg_heading {
+    margin: 0;
+	padding: 0 0 20px 0;
+	font-family: 'proxima_nova_ltlight', arial, sans-serif;
+	font-size: 2.3em;
+	font-weight: normal;
+	color: #005b81;
+    border-bottom: none;
+}
+#reg_reset .reg_content {
+	margin: 0;
+	padding: 0;
+	font-size: inherit;
+}
+#reg_reset .reg_content p {
+	padding: 0 0 20px 0;
+	font-family: 'proxima_nova_ltlight', Arial, sans-serif;
+	font-size: 1.6em;
+	line-height: 1.6em;
+}
+#reg_reset #reg_emailformbox, #reg_reset #reg_resetpassbox {
+	padding: 50px;
+	background: none;
+	background-color: #e8f0f8;
+	border: none;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	-moz-box-shadow: none;
+	color: #5d5d5d;
+	width: 650px;
+}
+#reg_reset input[type="text"] {
+	width: 410px;
+}
+#reg_reset .link-assistance {
+	font-size: 1.1em;
+}
+#reg_reset #submitlostpass, #submitwithoutpass {
+	margin: 10px 0 30px 0;
+	padding: 18px 10px;
+	background: none;
+	background-color: #cdcdcd;
+	border: none;
+	font-family: 'proxima_nova_rgregular', Arial, sans-serif;
+	font-size: 1.7em;
+	font-weight: normal;
+	color: #fff;
+	min-width: 242px;
+	width:auto;
+	text-shadow: none;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	cursor: pointer;
+	box-sizing:border-box;
+	transition: 0.5s;
+}
+/*#reg_reset #submitlostpass:hover {
+	background: #005b81;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+  	transition: 0.5s;
+}*/
+#reg_reset .reg_successtext {
+    padding: 10px 0 0 0;
+    font-family: 'proxima_nova_ltlight', Arial, sans-serif;
+	font-size: 1.6em;
+	line-height: 1.6em;
+	color: black;
+    background: none;
+    
+}
+
+/* password reset */
+#reg_reset #reg_resetpassbox {
+	width: 316px;
+}
+#reg_reset #submithintans {
+	margin: 20px 0 30px 0;
+	padding: 18px 0;
+	background: none;
+	background-color: #007cb1;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	border: none;
+	font-family: 'proxima_nova_rgregular', Arial, sans-serif;
+	font-size: 1.6em;
+	font-weight: normal;
+	color: #fff;
+	height: auto;
+	cursor: pointer;
+	text-shadow: none;
+	width: 242px;
+}
+#reg_reset #submithintans:hover {
+	background: #005b81;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+  	transition: 0.5s;
+}
+
+#alert_layer {
+    -moz-box-shadow: 3px 3px 10px #000000;
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #ccc;
+    display: none;
+    margin-left: -150px;
+    left:50%;
+    padding: 30px 20px 0;
+    position: absolute;
+    top: 250px;
+    width: 300px;
+    z-index: 6000510;
+  	font-family: 'proxima_nova_rgregular', Arial, sans-serif;
+
+}
+#alert_layer .success_submit {
+	margin-bottom:15px;
+	font-size: 1.6em;
+}
+/* password required */
+#password-required {
+	padding: 50px;
+	background: #e8f0f8;
+	color: #5d5d5d;
+	width: 650px;
+}
+#password-required input[type="submit"] {
+	margin: 0;
+}
+#password-required .link-forget-pass {
+	padding: 4px 0 15px 2px;
+	font-size: 1.1em;
+}
+#password-required .username-defined {
+	padding: 0 0 30px 0;
+}
+#password-required .username-defined .formlabel {
+	font-family: 'proxima_nova_ltlight', Arial, sans-serif;
+	font-size: 1.5em;
+	display: inline;
+}
+#password-required .username-defined .formfield2 {
+	font-family: 'proxima_nova_ltlight', Arial, sans-serif;
+	font-size: 1.5em;
+	color: #000;
+	display: inline;
+}
+#password-required .username-defined .formfield2 strong {
+	padding: 0 10px;
+	font-family: 'proxima_nova_ltsemibold';
+	font-weight: normal;
+	display: inline-block;
+}
+#password-required .username-defined p {
+	display: inline;
+	font-size: 0.95em;
+}
+#password-required input[type="password"].error {
+	border-color: #cc0000;
+}
+#password-required #sec_passwordreq {
+	position: relative;
+}
+#password-required #sec_passwordreq .error-msg {
+	padding: 20px;
+	position: absolute;
+	top: 0;
+	left: 290px;
+	background: #caf7ff;
+	font-size: 1.3em;
+	color: #838383;
+	display: none;
+}
+#password-required #sec_passwordreq .error-msg:after {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-right-color: #caf7ff;
+	border-width: 12px;
+	margin-top: -12px;
+}
+
+/* update profile
+****************************   */
+
+.reg_sections_name {
+	margin: 0;
+	padding: 0 0 10px 0;
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.65em;
+	font-weight: normal;
+	line-height: 1.2em;
+}
+#profileindex ul a {
+	font-family:'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size:1.6em;
+}
+#regprofile_tabs {
+    float:left;
+    width:202px;
+    padding-bottom:10px;
+    padding-top:10px;
+}
+#regprofile_form {
+    float:left;
+    width:600px;
+    padding-top:10px;
+    min-height:550px;
+}
+#regprofile_tabs ul, ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+#regprofile_tabs ul li {
+    padding:10px;
+    font-family:'proxima_nova_ltsemibold',arial, sans-serif;
+    font-weight:normal;
+}
+#regprofile_tabs ul li.errortab a {
+    color:#9e0000
+}
+#regprofile_tabs ul li .errortab_text {
+    display:none;
+}
+#regprofile_tabs ul li.errortab .errortab_text {
+    display:block;
+    font-weight:normal;
+    font-size:.8em;
+    color:#600000;
+}
+#regprofile_tabs ul li a {
+    color:#007cb0;
+}
+#regprofile_tabs ul li.regpro_current a {
+	color:#dcdcdc;
+}
+ .form_section .reg_sec_intro {
+	display:block;
+	list-style:none;
+	font-family:'proxima_nova_ltsemibold';
+	font-size:1.4em;
+	padding:0;
+}
+#regprofile_form input[type="submit"] {
+	margin:0 auto 40px;
+}
+/*#sec_chooseCountry, #sec_germanyState {
+	display:none;
+}*/
+#sec_chooseCountry {
+	display:none;
+}
+/*Default reg styles*/
+
+#med_login .footnoterow {
+	display:none;
+}
+.reg-default h1 {
+
+}
+
+ #registration_main input[type="button"]#submitreg {
+	background:#c2c2c2;
+}
+#registration_main .regsection_green input[type="button"]#submitreg, input[type="button"]#submitreg {
+    background: #007cb1;
+}
+
+#submit_disabled {
+    padding: 0;
+    position: absolute;
+    z-index: 500;
+    height: 100px;
+    width: 100%;
+    background: #fff;
+    -moz-opacity: 0.01;
+    filter: alpha(opacity=1);
+    opacity: 0.01;
+    margin-top: 10px;
+}
+
+.input_textbox_disabled{
+    background-color:#e8ebf2;
+}
+
+#submit_hint {
+    background: #FFC;
+    border: 1px solid #999;
+    padding: 3px;
+    display: none;
+    position: absolute;
+    margin-left: 105px;
+    z-index: 100;
+    width: 200px;
+    -moz-border-radius: 5px;
+    -moz-box-shadow: 1px 1px 5px #666;
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color='#696969');
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color='#696969')";
+    -moz-box-shadow: 2px 2px 7px #696969;
+    -webkit-box-shadow: 2px 2px 7px #696969;
+    box-shadow: 3px 3px 10px #696969;
+}
+#regerroralert{
+	position:absolute;
+	width:250px;
+	font-family: 'proxima_nova_ltlight', arial, sans-serif;
+	font-size:1.4em;
+	padding:10px;
+	top:320px;
+	left:40%;
+	z-index: 25;
+	background-color: #ed928b;
+}
+#regerroralert b {
+	font-weight: normal;
+}
+#regerroralert a, #regerroralert a:visited {
+	color:#000;
+}
+ #regerroralert:after { /* arrow for formhint - JS needs to be updated to hide it */
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+		border-right-color: #ed928b;
+	border-width: 9px;
+	margin-top: -9px;
+}
+
+/* oAuth
+******************** */
+#oAuthRegContainer #registerform {
+	display:none
+}
+#oAuthRegContainer #rememberrow .formlabel2, #oAuthLoginContainer #rememberrow .formlabel2 {
+	display: block;
+}
+
+/*#oAuthLoginContainer input[type="text"], #oAuthLoginContainer input[type="password"], #oAuthRegContainer input[type="text"], #oAuthRegContainer input[type="password"], #oAuthRegContainer select  {
+    -moz-box-sizing: border-box;
+    border: 1px solid #BABABA;
+    border-radius: 4px;
+    color: #919191;
+    padding: 14px 10px;
+}
+*/
+#oAuthLoginContainer #loginbox {
+	border:none;
+	background:none;
+	padding-bottom:10px;
+}
+#oAuthLoginContainer #loginpadding {
+	padding:10px 0 0 0;
+	min-height:10px;
+}
+
+/* **** oAuth **** */
+
+#oAuthLoginContainer  {
+	margin-top:15px;
+}
+#oAuthLoginContainer .title {
+	margin: 0;
+	padding: 12px 150px 12px 0;
+    background:url(/pi/global/logos/mscp/logo-medscape2013.png) 24% 50% no-repeat;
+
+}
+#oAuthRegContainer {
+	margin: 0 0 50px 0;
+}
+#oAuthRegContainer .title {
+	margin: 0 0 15px 0;
+}
+#oAuthLoginContainer h2, #oAuthRegContainer h2 {
+	margin: 0;
+	padding: 0;
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+    font-size: 1.55em;
+    font-weight: normal;
+    color: #000;
+    position: relative;
+}
+#oAuthLoginContainer h2 .medscapeLogo {
+	margin: 0 0 0 5px;
+	top: -2px;
+	position: absolute;
+}
+#oAuthLoginContainer #loginbox {
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: none;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	-moz-box-shadow: none;
+}
+#oAuthLoginContainer input[type="text"], #oAuthLoginContainer input[type="password"] {
+	margin: 0 0 10px 0;
+	padding: 14px 10px;
+	color: #919191;
+	border: 1px solid #bababa;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	font-size: 1.1em;
+	width: 280px;
+	*width: 260px;
+}
+#oAuthLoginContainer input[type="text"]:focus, #oAuthLoginContainer input[type="password"]:focus {
+	color: #222;
+}
+#oAuthLoginContainer input:focus::-webkit-input-placeholder {
+	color:transparent;
+}
+#oAuthLoginContainer input:focus:-moz-placeholder {
+	color:transparent;
+}
+#oAuthLoginContainer .login_label, #oAuthLoginContainer #passwordtext {
+	display: none;
+}
+#oAuthRegContainer #reg_submit .formfield_checkbox input {
+	width:auto;
+}
+#oAuthLoginContainer input[type="submit"], #oAuthRegContainer input[type="button"] {
+	margin: 0 0 12px 0;
+	padding: 15px 0 14px 15px;
+	width: 100%;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: none;
+	background: #1295cc url("/pi/global/ornaments/arrow-right-white.png") top 13px right 14px no-repeat;
+	text-align: left;
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.3em;
+	color: #fff;
+	width: 280px;
+	*width: 260px;
+	display: block;
+	text-shadow:none;
+}
+@media only screen and(-webkit-min-device-pixel-ratio:2), only screen and(min-resolution:192dpi) {
+	#oAuthLoginContainer input[type="submit"], #oAuthRegContainer input[type="button"] {
+		background: #1295cc url("/pi/global/ornaments/arrow-right-white-@2x.png") top 13px right 14px no-repeat;
+		background-size: 12px 21px;
+	}
+}
+#oAuthLoginContainer ul.help {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0.9em;
+}
+.orLine {
+	margin: 30px 0;
+	background: transparent url("/pi/global/ornaments/bg-or-line.png") center repeat-x;
+	font-size: 1.05em;
+	color: #999;
+	text-align: center;
+	width: 280px;
+}
+.orLine span {
+	padding: 0 14px;
+	background: #fff;
+	display: inline-block;
+}
+#oAuthRegContainer #reg_about {
+	margin: 40px 0 30px 0;
+}
+
+#oAuthRegContainer .fixed_select {
+	height:auto;
+}
+#oAuthRegContainer .fixed_select select {
+	padding-right: 33px;
+}
+#oAuthRegContainer .form_section {
+	margin: 0 0 30px 0;
+	padding: 15px 5px 15px 5px;
+	border: 1px solid #e5e5e5;
+    -moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background:#fafafa;
+}
+#oAuthRegContainer .form_section.regsection_green {
+	border: 1px solid #008807;
+}
+#oAuthRegContainer .reg_subsec {
+	margin: 10px 0 0 0;
+	padding: 5px 10px 10px 10px;
+	width: 290px;
+}
+#oAuthRegContainer .reg_sections_name {
+	margin-bottom: 10px;
+	padding: 3px 10px;
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.1em;
+	text-transform: uppercase;
+}
+#oAuthRegContainer .formlabel {
+	margin: 0;
+	padding: 0 0 2px 0;
+	font-family: 'proxima_nova_rgregular', arial, sans-serif;
+	font-size: 1.05em;
+}
+#oAuthRegContainer .form_section input[type="text"], #oAuthRegContainer .form_section input[type="password"], #oAuthRegContainer #reg_about_form input {
+	padding: 10px 10px;
+	color: #919191;
+	border: 1px solid #bababa;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	font-size: 1.1em;
+	width: 280px;
+}
+#oAuthRegContainer .form_section input[type="text"]:focus, #oAuthRegContainer .form_section input[type="password"]:focus {
+	color: #222;
+}
+#oAuthRegContainer #registerform .reg_subsec.reg_focus {
+    background: #f5f5f5;
+}
+#oAuthRegContainer .formfield {
+	background-position: center right !important;
+	width: 303px;
+}
+#oAuthRegContainer select {
+	margin: 0 0 10px 0;
+	padding: 10px;
+	-webkit-appearance: button;
+    -moz-appearance: button;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+	-moz-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	background: #fff url("/pi/global/ornaments/arrow-dropdown-blue.png") center right 10px no-repeat;
+	border: 1px solid #bababa;
+	font-size: 1.1em;
+	color: #919191;
+}
+@media only screen and(-webkit-min-device-pixel-ratio:2), only screen and(min-resolution:192dpi) {
+	#oAuthRegContainer select {
+		background: #fff url("/pi/global/ornaments/arrow-dropdown-blue-@2x.png") center right 10px no-repeat;
+		background-size: 17px 10px;
+	}
+}
+#oAuthRegContainer .formfield select {
+	min-width: 280px;
+	width: 280px;
+}
+#oAuthRegContainer .fixed_select {
+	width: 292px;
+	height: auto;
+}
+#oAuthRegContainer .formhint {
+	margin: 0;
+	width: 255px;
+	margin-top: 12px;
+	vertical-align: middle;
+	left: 430px;
+}
+#oAuthLoginContainer label {
+	width: 250px;
+}
+#oAuthRegContainer #reg_submit .formfield_checkbox {
+	margin: 0 0 10px 0;
+}
+#oAuthRegContainer #reg_submit .formfield {
+	padding: 0;
+}
+#oAuthRegContainer input[type="button"]#submitreg {
+	margin: 0;
+	padding: 14px 0 12px 15px;
+	height: auto;
+	width: 280px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: none;
+	background: #cccccc url("/pi/global/ornaments/arrow-right-white.png") top 12px right 12px no-repeat;
+	text-align: left;
+	text-shadow: none;
+	font-size: 1.3em;
+	color: #fff;
+	display: block;
+}
+#oAuthRegContainer .regsection_green input[type="button"]#submitreg {
+	background: #1295cc url("/pi/global/ornaments/arrow-right-white.png") top 12px right 12px no-repeat;
+}
+
+#oAuthLoginContainer #sec_workPhone {
+	width: 280px;
+}
+
+@media only screen and(-webkit-min-device-pixel-ratio:2), only screen and(min-resolution:192dpi) {
+	#oAuthRegContainer input[type="button"]#submitreg {
+		background: #cccccc url("/pi/global/ornaments/arrow-right-white-@2x.png") top 12px right 12px no-repeat;
+		background-size: 12px 21px;
+	}
+	#oAuthRegContainer .regsection_green input[type="button"]#submitreg {
+			background: #1295cc url("/pi/global/ornaments/arrow-right-white-@2x.png") top 12px right 12px no-repeat;
+			background-size: 12px 21px;
+	}
+}
+#oAuthRegContainer div.reg_sec_intro {
+	margin: 15px 10px;
+	color: #555;
+	font-size: 0.95em;
+}
+#oAuthRegContainer .form_section .legaltext {
+	margin: 30px 0 0 0;
+	font-size: 0.9em;
+	text-align: left;
+	color:#555;
+}
+#oAuthRegContainer #submit_disabled {
+	width:280px;
+	height:38px;
+	}
+	#oAuthRegContainer #usmd_layer {
+    margin: -65px 0 0 320px;
+    width: 250px;
+}
+#oAuthRegContainer #lanrA_text a{
+	padding-left:0px;
+}
+#registration_right {
+    float: left;
+    width: 315px;
+}
+#oAuthRegContainer #sec_regemailaddressconfirm, #oAuthRegContainer #sec_inviteCode, #oAuthRegContainer #sec_degree, #oAuthRegContainer #sec_regusername{
+	display: none;
+}
+/*newsletter reset*/
+
+#nlmsprofile input {
+	width:auto;
+}
+
+#nlmsprofile input[type="submit"] {
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0;
+	margin: 0;
+	width: 100px;
+	padding: 10px;
+}
+
+/* Hide Mobile Marketing Links on Registration and Login */
+
+.reg-mm-link {
+	display:none;
+	font-family: arial, sans-serif;
+	font-size:0.875rem;
+	line-height:1rem;
+	color:#000;
+	padding:0 0 2px 20px;
+}
+.reg-mm-link a {
+	font-family: arial, sans-serif;
+	font-size:0.875rem;
+	line-height:1rem;
+	color:#007cb0;
+	text-decoration: underline;
+}
+
+.label_hint{
+	display:block;
+}
+
+/* Spanish Reg */
+
+.medscape-es #reg_intro {
+	padding-top: 100px;
+	font-size: 18px;
+	line-height: 23px;
+}
+
+.medscape-es #about-prof-reg {
+	width: 400px;
+}
+
+.medscape-es #about-prof-reg .about-section {
+	padding: 60px 0 50px 0;
+	width: 400px;
+	line-height:25px;
+}
+
+.medscape-es #about-prof-reg .about-section.ref {
+	background-image: url("/pi/global/icons/icon-spanish-reg-leader.svg");
+	background-size: 55px 50px;
+}
+
+#about-prof-reg .about-section.spanish-last-reg{
+	padding-top: 25px;
+}
+
+.medscape-es #about-prof-reg .about-section.edu {
+    padding-bottom: 0;
+}
+
+.medscape-es #about-prof-reg .about-section.es-bottom-reg {
+    padding-top: 20px;
+    font-weight:bold;
+}
+
+.medscape-es #ms-prof-reg .reg-info p.secure-reg, #ssl_info {
+	/*display:none;*/
+}
+.medscape-es span.es-bold-reg{
+	font-family:"proxima_nova_rgregular";
+	font-weight: bold;
+}
+
+
+/*Spanish Login */
+
+.medscape-es #med_login #login_right ul li.refBullet {
+	background: url("/pi/global/icons/icon-spanish-reg-leader.svg") no-repeat;
+}
+
+.medscape-es #med_login #login_right {
+	width: 404px;
+	float: right;
+	padding-top:50px;
+}
+
+.medscape-es #med_login #login_right .spanish-second-text {
+    color: #005b81;
+    font-family: "proxima_nova_ltlight",arial,sans-serif;
+    font-size: 20px;
+    width: 410px;
+}
+
+.medscape-es #med_login #login_right ul li{
+	font-size: 18px;
+    padding-bottom: 30px;
+    width: 400px;
+}
+
+.medscape-es #med_login ul.bulleted{
+	padding-top: 10px;
+}
+
+.medscape-es #med_login ul.help li{
+	margin:0px;
+}
+
+.medscape-es #med_login ul.help li:first-child, .medscape-de #med_login ul.help li:first-child{
+	border-right:none;
+}
+
+.medscape-es #med_login ul.help li:first-child{
+	margin: 0 0 10px;
+}
+
+.medscape-es #med_login input[type="submit"], #med_login input[type="button"], #password-required input[type="submit"], input[type="button"], input[type="submit"]{
+	font-size:22px;
+}
+
+/*PPE-89629*/
+#sec_hintQuestion,
+#sec_reghintanswer {
+	display: none;
+}
+
+/*PPE-88476*/
+.password-wrapper {
+	position: relative;
+}
+
+.password-wrapper #regpassword {
+	width: 196px !important;
+}
+
+#hideText {
+	display: none;
+}
+
+.toggle-password {
+	position: absolute;
+	height: 100%;
+	width: 64px;
+	background-color: #f3efef;
+	border: solid 1px #d1cfcf;
+	border-left: none;
+	font-size: 0.6rem;
+}
+
+#med_login .inputrow input[type="password"]#password,
+#med_login .inputrow input[type="text"]#password{
+	width: 196px;
+	margin: 0;
+}
+
+/*PPE-97183*/
+#alertbtn {
+	margin: 0 auto 40px;
+	width: auto;
+	padding: 18px 10px;
+	display: block;
+}
+
+/* PPE-100956 */
+
+#sec_workPhone .formlabel span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#sec_workPhone .formfield {
+	width: 100%;
+}
+
+#sec_workPhone .formfield input {
+	display: inline-block;
+}
+
+#sec_licenseId .formhint,
+#sec_workCity .formhint {
+	top: 10px;
+}
+
+span.country-code-label {
+	width: 12% !important;
+	margin-right: -2px;
+	font-size: 0.7em;
+}
+
+input.country-code-input {
+	width: 12% !important;
+	margin-right: -2px;
+	background-color: #c2c2c2;
+	padding: 10px 8px;
+}
+
+.work-phone {
+	width: 54% !important;
+	margin: 0 3%;
+}
+
+span.work-phone {
+	text-align: center;
+}
+
+.extension {
+	width: 20% !important;
+	margin-left: -2px;
+}
+
+.formfield.reg_red input.country-code-input,
+.formfield.reg_red input.extension {
+	border: 1px solid #d1cfcf;
+}
+
+#tab_practiceinfo {
+	display: none;
+}
+
+/* PPE-108917 */
+
+#practiceinfo_header {
+	font-family: 'proxima_nova_ltsemibold';
+    font-size: 1.65em;
+}
+
+#practiceinfo_details.reg_subsec {
+	font-size: 1.4em;
+}
+
+#promoemailoptoutdiv{
+	height:90px;
+}
+
+.reg_subsec#sec_licenseId input[name="licenseValue"]:disabled {
+	opacity: 0.4;
+}
+
+/********/
+.login-temp-link-wrapper{
+	text-align: center;
+}
+.forgot-p-or-u-wrapper{
+	text-align: center;
+	margin-top: 20px;
+}
+.newsign{
+	font-family: ARIAL;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #d0011b;
+    color: #ffffff;
+    padding: 2px 2px;
+    margin-left: 3px;
+}
+.check-icon{
+	background:url(/pi/global/icons/icon-checkmark-green.png) no-repeat;
+    background-size: 20px 20px;
+    background-position: left 0px top 4px;
+    padding-left: 26px;
+}
+.email_txt{
+	font-family: 'proxima_nova_rgregular';
+	font-weight: bold;
+}
+.txt_list{
+	margin: 20px 0 !important;
+}
+.reg_successtext:nth-last-child(1){
+	margin-top: 50px;
+}
