@@ -1,0 +1,143 @@
+tml, body {
+    height: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    padding:0;
+    margin:0;
+    font-size: 76%;
+    min-width: 320px;
+}
+
+.page-header{
+    border-top: 4px solid #a2b0ba;;
+    padding-top: .75rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    margin-bottom: 5px;
+    position: relative;
+}
+
+#navbarTogglerDemo03{
+    font-size: .6875rem;
+}
+
+.link-users{
+    display: inline-block;
+    position: relative;
+    font-size: .875rem;
+    line-height: 1.125rem;
+    align-self: center;
+}
+
+.link-users a{
+    color: black;
+    padding: 2px;
+    margin-left: 1.375rem;
+}
+
+.link-users a:link{
+    text-decoration: none;
+}
+
+.header-search{
+    margin-left: 1.375rem;
+    border: 1px solid #ccd6dd;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+.header-logo{
+    height: 2.5rem;
+}
+
+.header-logo img{
+    height: 2.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tab-header{
+    font-size: .875rem;
+    margin-right: 1.5rem;
+    text-transform: uppercase;
+    line-height: 1;
+    border-bottom: 3px solid transparent;
+    display: inline-block;
+    padding: .5rem 0 .375rem;
+}
+
+#tab-header a{
+    color: black;
+    margin-right: 1rem;
+    padding: .5rem 0 .375rem;
+}
+
+#tab-header a:link{
+    text-decoration: none;
+}
+.landing-title {
+    font-size: 2.8125rem;
+    line-height: 1;
+}
+
+.landing-title {
+    text-align: center;
+    font-size: 3.4375rem;
+    line-height: 0.8;
+    color: #2e4154;
+    padding: 1.6875rem 0 0.75rem;
+}
+
+div {
+    display: block;
+} 
+
+.landing-header {
+    padding: 0;
+}
+
+.landing-header {
+    background-color: #edf0f5;
+    margin-bottom: 2.1875rem;
+    padding: 0 5%;
+}
+
+div {
+    display: block;
+}
+
+.landing-bullet, .landing-slogan {
+    font-size: 0.9375rem;
+}
+.landing-slogan {
+    font-family: proxima_nova_rgregular;
+    font-size: 0.9375rem;
+    text-align: center;
+    color: #2e4154;
+    padding-bottom: 2rem;
+}
+.landing-bullets {
+    text-align: center;
+    position: relative;
+}
+
+.icon-academic-cap, svg.icon-academic-cap {
+    width: 70px;
+    height: 37px;
+}
+svg:not(:root), symbol, image, marker, pattern, foreignObject {
+    overflow: hidden;
+}
+.landing-bullet-img {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    margin-right: 1rem;
+}
+
+div {
+    display: block;
+}

@@ -1,0 +1,214 @@
+#headerbox .left {
+    width: 300px;
+    float: left;
+    text-align: left;
+}
+#headerborder {
+    margin-right: auto;
+    margin-left: auto;
+    width: 980px;
+    padding: 10px 0 3px 0;
+}
+#headerbox .left img{
+	height: 30px;
+}
+#headerbox a {
+    text-decoration: none;
+    color: #000;
+}
+.headertab {
+    margin: 10px 0 0 10px;
+    display: inline-block;
+}
+#headerbox .right {
+    width: 680px;
+    text-align: right;
+    float: left;
+}
+#headerbox .spacer {
+    clear: both;
+    font-size: 1px;
+    line-height: 1px;
+    padding: 0;
+}
+div#headerbox {
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+#appLandingSlider_container.slide1, #appLandingSlider_container.slide2, #appLandingSlider_container.slide3, #appLandingSlider_container.slide4, #appLandingSlider_container.slide5 {
+    transition: all 0.3s ease;
+}
+div#appLandingSlider #appLandingSlider_container {
+    width: 4910px;
+    height: 493px;
+}
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#appLandingContainer #appLandingSlider #appSliderNav ul li a {
+    background-color: white;
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: 0 10px;
+
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+#appLandingContainer div#panelTwo p {
+    font-family: 'proxima_nova_rgregular';
+    font-size: 40px;
+    margin: 0 auto;
+    padding-top: 10%;
+    width: 77%;
+}
+
+element.style {
+}
+#appLandingContainer div#panelTwo p {
+    font-family: 'proxima_nova_rgregular';
+    font-size: 40px;
+    margin: 0 auto;
+    padding-top: 10%;
+    width: 77%;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+        div.appLanding_slideOne {/*position:relative;*/ left:0px; top:0px; width:0px;/*width:979px;*/ height:493px; }
+        div.appLanding-slideOne-01 {position:absolute; left:0px; top:0px; width:0px;/*width:979px;*/ height:123px; }
+        div.appLanding-slideOne-02 {position:absolute; left:0px; top:123px; width:0px;/*width:979px;*/ height:370px; } 
+        div.appLanding-slideOne-03 {position:absolute; left:326px; top:123px; width:0px;/*width:979px;*/ height:370px; }
+        div.appLanding-slideOne-04 {position:absolute; left:654px; top:123px; width:0px;/*width:979px;*/ height:370px; }
+        div.appLanding-slideOne-05 {position:absolute; left:734px; top:123px; width:245px; height:370px; }
+                
+        div.appLanding_slideTwo {position:relative; left:0px; top:0px; width:979px; height:493px; } 
+        div.appLanding-slideTwo-01 {position:absolute; left:0px; top:0px; width:979px; height:334px; } 
+        div.appLanding-slideTwo-02 {position:absolute; left:0px; top:334px; width:197px; height:58px; } 
+        div.appLanding-slideTwo-03 {position:absolute; left:197px; top:334px; width:162px; height:58px; } 
+        div.appLanding-slideTwo-04 {position:absolute; left:359px; top:334px; width:173px; height:58px; } 
+        div.appLanding-slideTwo-05 {position:absolute; left:532px; top:334px; width:447px; height:159px; } 
+        div.appLanding-slideTwo-06 {position:absolute; left:0px; top:392px; width:532px; height:101px; }        
+        
+        div.appLanding_slideThree {position:relative; left:0px; top:0px; width:979px; height:493px; } 
+        
+        div.appLanding-slideThree-01 {position:absolute; left:0px; top:0px; width:979px; height:334px; } 
+        div.appLanding-slideThree-02 {position:absolute; left:0px; top:334px; width:197px; height:58px; } 
+        div.appLanding-slideThree-03 {position:absolute; left:197px; top:334px; width:162px; height:58px; } 
+        div.appLanding-slideThree-04 {position:absolute; left:359px; top:334px; width:175px; height:58px; z-index:1; }
+        div.appLanding-slideThree-05 {position:absolute; left:359px; top:334px; width:620px; height:159px; } 
+        div.appLanding-slideThree-06 {position:absolute; left:0px; top:392px; width:359px; height:101px; }      
+        
+        div.appLanding_slideFour {position:relative; left:0px; top:0px; width:979px; height:493px; } 
+        div.appLanding-slideFour-01 {position:absolute; left:0px; top:0px; width:979px; height:334px; } 
+        div.appLanding-slideFour-02 {position:absolute; left:0px; top:334px; width:197px; height:58px; } 
+        div.appLanding-slideFour-03 {position:absolute; left:197px; top:334px; width:162px; height:58px; } 
+        div.appLanding-slideFour-04 {position:absolute; left:359px; top:334px; width:620px; height:159px; } 
+        div.appLanding-slideFour-05 {position:absolute; left:0px; top:392px; width:359px; height:101px; }       
+        
+        div.appLanding_slideFive {position:relative; left:0px; top:0px; width:979px; height:493px; } 
+        div.appLanding-slideFive-01 {position:absolute; left:0px; top:0px; width:979px; height:334px; } 
+        div.appLanding-slideFive-02 {position:absolute; left:0px; top:334px; width:197px; height:58px; } 
+        div.appLanding-slideFive-03 {position:absolute; left:197px; top:334px; width:162px; height:58px; } 
+        div.appLanding-slideFive-04 {position:absolute; left:359px; top:334px; width:175px; height:58px; } 
+        div.appLanding-slideFive-05 {position:absolute; left:534px; top:334px; width:445px; height:159px; } 
+        div.appLanding-slideFive-06 {position:absolute; left:0px; top:392px; width:534px; height:101px; }
+        
+    img[Attributes Style] {
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    width: 979px;
+    height: 334px;
+}
+#appLandingContainer {
+    width: 980px;
+    margin: 35px auto;
+}
+
+.kotak{
+    width: 979px;
+    margin: 0 auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}  
+#panelOne {
+    background-image: url(assets/bg1.png) center center no-repeat;
+    background-size: 100% auto;
+    text-align: center;
+}
+#appLandingContainer #preFooter ul#otherLinks li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+#footer {
+    color: #999;
+    font-size: 12px;
+}
+
+
+#footer h4 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+#footer h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+body{
+    text-align: center;
+    font-size: 76%;
+    font-family: arial;
+}
+#footer style{
+    border-top:  1px solid #ddd;
+}

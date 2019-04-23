@@ -1,0 +1,46 @@
+h2 {
+    font-family: Verdana, sans-serif;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+body {
+    background-color: #FFFFFF;
+    font-family: arial, sans-serif;
+    font-size: 76%;
+}
+h3 {
+    font-family: Verdana, sans-serif;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+form {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
