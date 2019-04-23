@@ -1,0 +1,37 @@
+
+#reg_about{
+	margin: 0 0 30px 0;
+	padding: 30px 50px;
+	background-color: #e8f0f8;
+}
+
+#reg_about input{
+	width: 410px;
+
+}
+
+.reg_sections_name {
+	margin: 0;
+	padding: 0 0 10px 0;
+	font-family: 'proxima_nova_ltsemibold', arial, sans-serif;
+	font-size: 1.65em;
+	font-weight: normal;
+	line-height: 1.2em;
+}
+
+#reg_about #regzippractice{
+	width: 192px;
+}
+
+#reg_account{
+	margin: 0 0 30px 0;
+	padding: 30px 50px;
+	background-color: #e8f0f8;
+}
+
+#sec_profession span{
+	padding: 10px 10px 8px 10px;
+    display: block;
+}
+
+

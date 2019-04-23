@@ -1,0 +1,2565 @@
+/* Medscape Reference  - Clinical Reference + Drug Monographs -
+Updated 1/20/16 by SC
+Previously 10/1/15 by RM-NYC */
+#leftcol {float: left;width:660px}
+#rightcol {width: 310px}
+#adtagrightcol {margin-bottom: 10px}
+#adtagrightcol_bottom {text-align: center}
+#adtagrightcol_bottom .adlabeltop,#adtagrightcol_imglayer .adlabeltop {
+	background: 0;
+	margin-top: 0;
+	padding-top: 7px;
+}
+#adtagrightcol_bottom .adlabeltop.adlabelifi,#adtagrightcol_imglayer .adlabeltop.adlabelifi {
+	padding-top: 7px;
+	background-image: url(//img.medscape.com/pi/global/text/txt-ifi-top.gif);
+	background-repeat: no-repeat;
+	background-position: top center;
+	text-align: center;
+}
+#adtagrightcol_bottom .adlabeltop.adlabelblank,#adtagrightcol_imglayer .adlabeltop.adlabelblank {background: 0;padding-top:7px}
+#drugdb {
+	padding-top: 0;
+	width: 660px;
+	z-index: 50;
+	clear: both;
+	background-color: #fdfdfd;
+	background: -moz-linear-gradient(top,#fdfdfd 0,#f1f1f1 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fdfdfd),color-stop(100%,#f1f1f1));
+	background: -webkit-linear-gradient(top,#fdfdfd 0,#f1f1f1 100%);
+	background: -o-linear-gradient(top,#fdfdfd 0,#f1f1f1 100%);
+	background: -ms-linear-gradient(top,#fdfdfd 0,#f1f1f1 100%);
+	background: linear-gradient(to bottom,#fdfdfd 0,#f1f1f1 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd',endColorstr='#f1f1f1',GradientType=0);
+	margin-bottom: 8px;
+}
+#all #drugdb {width: auto}
+#drugdbmain {margin: 0;padding:0}
+#print_logo {display: none}
+#drugdbmain2 {
+	margin: 0;
+	padding: 5px;
+	background-color: #fff;
+}
+.drugdbsectioncontent {
+	margin: 0;
+	padding: 10px 10px 30px 10px;
+	width: 478px;
+	float: right;
+	border: 1px solid #e4e4e4;
+	visibility: hidden;
+}
+.drugdbsectioncontent a {text-decoration: none}
+.drugdbsectioncontent a:hover {text-decoration: underline}
+.layer_title {
+	color: #5e5e5e;
+	font-size: 1.2em;
+	text-transform: none;
+	border: 0;
+	margin: 0 0 5px 0;
+	padding: 4px 0 10px 0;
+	background-color: #fff;
+	background: url(//img.medscape.com/pi/reference/h3bg.png) no-repeat bottom left;
+	color: #444;
+	font-family: 'proxima_nova_ltsemibold',arial,sans-serif;
+}
+.layer_title2 {
+	border-bottom: 1px dotted #e4e4e4;
+	color: #000;
+	font-family: arial,sans-serif;
+	font-size: 1.05em;
+	font-weight: bold;
+	margin: 0 0 5px;
+	padding: 0 0 3px 3px;
+}
+#drugdbmain h2 {
+	font-size: 1.25em;
+	text-transform: none;
+	border: 0;
+	margin: 0 0 5px 0;
+	padding: 4px 0 10px 0;
+	background-color: #fff;
+	background: url(//img.medscape.com/pi/reference/h3bg.png) no-repeat bottom left;
+	color: #444;
+	font-family: 'proxima_nova_ltsemibold',arial,sans-serif;
+	font-weight: normal;
+}
+p {
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 3px;
+}
+.sect2 {margin: 5px 0 0 0}
+.drugdbsectioncontent .refsection_content .sect2 ul {padding-top: 0}
+p.sect2title {
+	font-weight: bold;
+	color: #333;
+	margin: 0 0 3px 0;
+}
+#drugdbmain h3 {
+	color: #000;
+	font-family: arial,sans-serif;
+	font-size: 1.05em;
+	font-weight: bold;
+	margin: 0 0 5px 0;
+	padding: 0 0 3px 3px;
+	border-bottom: 1px dotted #e4e4e4;
+}
+#drugdbmain h4 {
+	color: #000;
+	font-family: arial,sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	margin: 0;
+	padding: 0 0 3px 3px;
+}
+#drugdbmain h5 {
+	color: #484848;
+	font-family: arial,sans-serif;
+	font-size: .9em;
+	font-weight: bold;
+	margin: 0;
+	padding: 0 0 3px 6px;
+}
+#drugdbheader {background-color: #fff}
+#maincolboxdrugdbheader {
+	margin: 0;
+	padding: 5px;
+	border: 1px solid #e4e4e4;
+}
+.drug_suffix {font-size: .8em}
+.drugbrandname {
+	font-family: Verdana,Geneva,sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	margin: 0 0 0 8px;
+}
+#drugbrandname_more, .brandNameLabel {display: none}
+#moredrugbrand {color: #007cb0;cursor:pointer}
+#moredrugbrand:hover {text-decoration:underline}
+#maincolboxdrugdbheader h1 {
+	margin: 0;
+	padding: 0;
+	font-family: 'proxima_nova_rgregular',arial,sans-serif;
+	font-size: 1.8em;
+	text-transform: none;
+	display: inline;
+	color: #444;
+}
+#maincolboxdrugdbheader ul li {
+	float: left;
+	margin-right: 5px;
+	font-size: .90em;
+}
+#maincolboxdrugdbheader ul {
+	margin-top: 0;
+	margin-left: 0;
+	margin-bottom: 0;
+	padding: 0;
+	font-weight: normal;
+	list-style-type: none;
+}
+
+.ref_stickytitle #maincolboxdrugdbheader ul {display: none}
+.ref_stickytitle #drugdblinks {display: none}
+.ref_stickytitle #maincolboxdrugdbheader h1 {font-size: 1.4em}
+.ref_stickytitle .clinref_updated {color: white}
+
+#drugdblinks {float: right;font-size:.95em}
+#drugdblinks a {text-decoration: none;color:#000}
+.drugdblinksright {text-align: left;padding:5px 5px 0 0}
+.drugdblinksright ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.drugdblinksright ul li {
+	display: block;
+	margin: 0;
+	padding: 2px 5px 1px 3px;
+	clear: both;
+}
+#leftnav {
+	font-size: .95em;
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 160px;
+	overflow: hidden;
+	overflow-y: auto;
+}
+.sectionmenu {font-family: 'proxima_nova_rgregular',arial,sans-serif;font-size:1.1em}
+#leftnav .sectionmenu ul {padding: 0;margin:0}
+#leftnav .sectionmenu ul li {border-bottom: 1px solid #e4e4e4}
+#leftnav ul {margin: 0;list-style:none}
+#leftnav ul li {
+	color: #aaa;
+	margin: 0;
+	padding: 15px 10px;
+	word-wrap: break-word;
+}
+#leftnav .sectionmenu ul li:first-child {border-top: 1px solid #e4e4e4}
+#leftnav ul li.current_section {
+	background: url(//img.medscape.com/pi/reference/current_pointer.png) no-repeat right center #eaf2f6;
+	width: auto;
+	padding-right: 17px;
+}
+#leftnav ul li.current_section a {font-family: proxima_nova_rgbold,arial,sans-serif;color:#000}
+#leftnav ul li:hover {text-decoration: none}
+#leftnav ul li a {
+	display: block;
+	cursor: pointer;
+	color: #000;
+	text-decoration: none;
+}
+#leftnav ul li a:hover {color: #000;text-decoration:underline}
+#leftnav ul li ul {
+	font-size: .90em;
+	padding: 0 0 0 8px;
+	margin: 0;
+	list-style: none outside none;
+}
+/*div::-webkit-scrollbar {
+	width: 10px;
+	background: #efefef;
+	overflow: visible;
+	-webkit-border-radius: 5px;
+}
+*/
+/*
+#content_area::-webkit-scrollbar{
+    width: initial;
+    background:initial;
+    overflow: initial;
+}
+#content_area::-webkit-scrollbar-track{
+    background:initial;
+    width: initial;
+}
+#content_area::-webkit-scrollbar-track-piece{
+    background:initial;
+}
+#content_area::-webkit-scrollbar-thumb{    
+    background:initial;
+    width: initial;
+}
+
+#isi_box::-webkit-scrollbar{
+    width: initial;
+    background:initial;
+    overflow: initial;
+}
+#isi_box::-webkit-scrollbar-track{
+    background:initial;
+    width: initial;
+}
+#isi_box::-webkit-scrollbar-track-piece{
+    background:initial;
+}
+#isi_box::-webkit-scrollbar-thumb{    
+    background:initial;
+    width: initial;
+}*/
+
+/*div#leftnav::-webkit-scrollbar {width: 8px}
+div::-webkit-scrollbar-thumb {background-color: #ccc;-webkit-border-radius:5px}
+div::-webkit-scrollbar-thumb:hover {background-color: #aaa}
+div::-webkit-scrollbar-button {
+	height: 5px;
+	display: block;
+	background-color: #aaa;
+}*/
+#drug_interlist ul,#interaction_checker ul {
+	list-style-position: outside;
+	list-style-type: none;
+	font-weight: normal;
+}
+#interaction_checker #interactioncol h4#nomdic,#interaction_checker #interactioncol h4#fmdic {margin: 8px 0 8px 0;font-size:1.25em}
+#drugdbmain h4.contraindicated {
+	color: #d40034;
+	background: #eee;
+	padding-top: 3px;
+}
+#drugdbmain h4.serious {color: #ff6200;background:#eee}
+#drugdbmain h4.significant {color: #770;background:#eee}
+#drugdbmain h4.minor {color: #3265d0;background:#eee}
+#intcheck_result h4.contraindicated,#intcheck_result h4.serious,#intcheck_result h4.significant,#intcheck_result h4.minor {background: #fff}
+#intcheck_result ul {padding: 0;margin:5px 2px}
+#drug_interlist li.contraindicated p {border: 1px solid #d40034;text-decoration:none}
+#drug_interlist li.serious p {border: 1px solid #ff6200}
+#drug_interlist li.significant p {border: 1px solid #cc0}
+#drug_interlist li.minor p {border: 1px solid #3265d0}
+#drug_interlist li.contraindicated {
+	color: #007cb0;
+	background: url(//img.medscape.com/pi/reference/bullet_con.png) no-repeat left center;
+	padding-left: 12px;
+}
+#drug_interlist li.contraindicated:hover {color: #24a2dd}
+#drug_interlist li.serious {
+	color: #007cb0;
+	background: url(//img.medscape.com/pi/reference/bullet_ser.png) no-repeat left center;
+	padding-left: 12px;
+}
+.serioustext {color: #000;background-color:#9FF}
+#drug_interlist li.serious:hover {color: #24a2dd}
+#drug_interlist li.significant {
+	color: #007cb0;
+	background: url(//img.medscape.com/pi/reference/bullet_sig.png) no-repeat left center;
+	padding-left: 12px;
+}
+#drug_interlist li.significant:hover {color: #24a2dd}
+#drug_interlist li.minor {
+	color: #007cb0;
+	background: url(//img.medscape.com/pi/reference/bullet_min.png) no-repeat left center;
+	padding-left: 12px;
+}
+#drug_interlist li.minor:hover {color: #24a2dd}
+#druglistcontainerNames ul li {
+	background: url(//img.medscape.com/pi/reference/bullet_main.png) no-repeat left center;
+	padding-left: 12px;
+	color: #007cb0;
+}
+.druglistcontainer li p {border: 1px solid #000;padding-top:15px}
+span.contraindicated {
+	background: url(//img.medscape.com/pi/reference/bullet_con.png) no-repeat left 6px #eee;
+	padding-left: 12px;
+	margin: 15px 0 0 0;
+	color: #d40034;
+	padding-top: 3px;
+	display: block;
+}
+span.serious {
+	background: url(//img.medscape.com/pi/reference/bullet_ser.png) no-repeat left 6px #eee;
+	padding-left: 12px;
+	margin: 15px 0 0 0;
+	color: #ff6200;
+	padding-top: 3px;
+	display: block;
+}
+span.significant {
+	background: url(//img.medscape.com/pi/reference/bullet_sig.png) no-repeat left 6px #eee;
+	padding-left: 12px;
+	margin: 15px 0 0 0;
+	color: #770;
+	padding-top: 3px;
+	display: block;
+}
+span.minor {
+	background: url(//img.medscape.com/pi/reference/bullet_min.png) no-repeat left 6px #eee;
+	padding-left: 12px;
+	margin: 15px 0 0 0;
+	color: #3265d0;
+	padding-top: 3px;
+	display: block;
+}
+.drugdbsectioncontent .refsection_content ul {
+	margin: 0;
+	padding: 4px 0 16px 20px;
+	list-style-type: disc;
+	margin-left: 10px;
+}
+.drugdbsectioncontent .refsection_content ul.topbullet-para {
+	list-style: none;
+	padding: 0 0 0 3px;
+	margin: 0 0 13px 0;
+}
+.drugdbsectioncontent .refsection_content ul li ul {list-style-type: circle;padding-bottom:0}
+.drugdbsectioncontent .refsection_content ul.topbullet-para li ul {list-style-type: disc;padding-bottom:0}
+.drugdbsectioncontent .refsection_content ul li ul li ul {list-style-type: square}
+.drugdbsectioncontent .refsection_content ultopbullet-para li ul li ul {list-style-type: circle}
+.drugdbsectioncontent .refsection_content ul li {
+	margin: 0;
+	padding: 4px 4px 8px 0;
+	line-height: normal;
+}
+#drug_interlist ul li,#interaction_checker ul li {cursor: pointer;padding-bottom:8px}
+#drug_interlist ul li p {
+	display: none;
+	position: absolute;
+	z-index: 90;
+	padding: 10px 3px 5px 5px;
+	width: 250px;
+	left: 50%;
+	margin-left: -100px;
+	background-color: #fff;
+	color: #000;
+	background-image: url(//img.medscape.com/pi/reference/bg_closeinter.png);
+	background-position: right -2px;
+	background-repeat: no-repeat;
+	border: 1px solid #999;
+	-moz-box-shadow: .2em .2em .5em #666;
+	-webkit-box-shadow: .2em .2em .5em #666;
+	box-shadow: .2em .2em .5em #666;
+}
+#drug_interlist ul li:hover {color: #24a2dd}
+#relatedlinksleft {
+	border: 0;
+	padding: 0;
+	background: #fff;
+	border: #c0c9bf solid 1px;
+	margin-bottom: 10px;
+}
+#relatedlinksright {
+	border: 0;
+	padding: 0;
+	background: #fff;
+	border: #c0c9bf solid 1px;
+	margin-bottom: 10px;
+}
+#link_leftcol {
+	margin-top: 10px;
+	border: 1px solid #e4e4e4;
+	background: #fff;
+	position: relative;
+}
+.relatedlinksrighttitle {
+	border-bottom: 1px solid #e4e4e4;
+	color: #5e5e5e;
+	padding-bottom: 4px;
+	margin-bottom: 8px;
+	background-color: #eaf2f6;
+}
+.link_lefttable .relatedlinksrighttitle {
+	background-color: #fff;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	border-bottom: 1px solid #c0c9bf;
+	color: #5e5e5e;
+	padding: 0 0 3px 3px;
+	margin-bottom: 8px;
+	font-weight: bold;
+}
+.relatedlink_leftcol ul {
+	margin: 0;
+	padding: 0 5px 1px 5px;
+	list-style-type: none;
+}
+#link_leftcol ul {
+	margin: 0;
+	padding: 0 5px 1px 5px;
+	list-style-type: none;
+}
+#link_leftcol li {
+	margin: 0;
+	padding: 0 0 12px 0;
+	font-size: 1.05em;
+}
+#link_leftcol li a {
+	font-family: 'proxima_nova_ltsemibold',arial,sans-serif;
+	color: #000;
+	text-decoration: none;
+}
+#link_leftcol li a:hover {text-decoration: underline}
+.leftcol_leftlinks {margin: 5px 10px}
+.leftcol_rtlinks {margin: 5px 10px}
+.link_lefttable td {width: 50%}
+.leftcol_links {margin: 5px 10px}
+ul.classdruglist {
+	font-size: 1.15em;
+	margin-top: 0;
+	padding-top: 0;
+	list-style: square outside none;
+}
+	ul.classdruglist li {padding: 4px 0 4px 0}
+.capt {
+	font-size: 11px;
+	font-weight: normal;
+	line-height: 13px;
+	display: block;
+	color: #454545;
+	margin: 0;
+	padding-top: 3px;
+	padding-right: 0;
+	padding-bottom: 10px;
+	padding-left: 3px;
+}
+.bmed {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #999;
+	padding-bottom: 6px;
+}
+.totopa {margin: 0 5px -2px 10px}
+#topic_menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border-top: 0;
+	font-size: .95em;
+}
+#topic_menu ul li.current_topic {background: #eaf2f6}
+#topic_menu ul li.current_topic a {
+	font-family: proxima_nova_rgbold,arial,sans-serif;
+	color: #000;
+	text-decoration: none;
+}
+#topic_menu ul li a {
+	font-size: 13px;
+	text-decoration: none;
+	color: #000;
+	font-family: 'proxima_nova_ltsemibold',arial,sans-serif;
+}
+#topic_menu ul li:hover {color: #dce3d5;margin:0}
+#topic_menu ul li {
+	background: #fff;
+	margin: 0;
+	float: left;
+	display: block;
+	padding: 8px 16px;
+}
+#topic_menu ul li a:hover {text-decoration: none}
+#adtagheader {z-index: 2}
+#topic_menu {
+	background-color: #fff;
+	border: 1px solid #e4e4e4;
+	border-top: 0;
+	width: 658px;
+	z-index: 1;
+}
+.clinref_updated {
+	padding: 8px 5px 0 0;
+	color: #666;
+	text-align: right;
+	font-size: .8em;
+	background: #fff;
+}
+.drugdbsectioncontent ul {list-style: none}
+#ref_pregnancybtn {
+	float: right;
+	text-align: center;
+	background: url(//img.medscape.com/pi/reference/viewdrug_btn.png) no-repeat right;
+	width: 163px;
+	height: 30px;
+	padding: 10px 0 0 0;
+	margin-top: -10px;
+	cursor: pointer;
+}
+.ref_medicationbtn {
+	float: right;
+	text-align: center;
+	background: url(//img.medscape.com/pi/reference/viewdrug_btn.png) no-repeat right;
+	width: 160px;
+	height: 25px;
+	padding: 10px 5px 0 0;
+	margin: -7px 3px 0 0;
+	font-size: 12px;
+}
+.pborder {
+	border: 1px solid #aaa;
+	margin: 0 0 0 3px;
+	cursor: -moz-zoom-in;
+	cursor: url(//img.medscape.com/pi/global/icons/icon-magnify.cur),pointer;
+	display: block;
+}
+#pcategory {
+	display: none;
+	border: 1px solid #c0c9bf;
+	background: #f6f6f6;
+	padding: 7px;
+	margin: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.cterm {font-weight: bold;margin-right:3px}
+.back_next_btn {padding: 10px 5px}
+.next_btn {
+	background: url(//img.medscape.com/pi/reference/next_btn.png) no-repeat right center;
+	padding-right: 15px;
+	float: right;
+	display: block;
+	width: 250px;
+	text-align: right;
+}
+.next_btn_drug {
+	background: url(//img.medscape.com/pi/reference/next_btn.png) no-repeat right;
+	float: right;
+	padding-right: 15px;
+	display: block;
+	width: 200px;
+	text-align: right;
+}
+.next_btn1 {
+	float: right;
+	display: block;
+	width: 250px;
+	text-align: right;
+	font-weight: bold;
+	margin-top: 0;
+}
+.back_btn {
+	background: url(//img.medscape.com/pi/reference/back_btn.png) no-repeat left;
+	float: left;
+	display: block;
+	padding-left: 15px;
+	width: 70px;
+}
+.back_btn_drug {
+	background: url(//img.medscape.com/pi/reference/back_btn.png) no-repeat left;
+	float: left;
+	display: block;
+	padding-left: 15px;
+	width: 70px;
+}
+.nextchapter_btn {
+	background: url(//img.medscape.com/pi/reference/next_btn.png) no-repeat right;
+	float: right;
+	padding-right: 15px;
+	display: block;
+	text-align: right;
+}
+.next_section_btn, .next_btn_drug {
+	float: right;
+	display: inline-block;
+	border: 1px solid #EEE;
+	margin: 0 5px 15px 0;
+}
+.next_section_btn a, .next_btn_drug {
+	font-family: "proxima_nova_rgregular", arial, sans-serif;
+	display: block;
+	padding: 9px 35px 7px 10px;
+	position: relative;
+}
+.next_section_btn a:after, .next_btn_drug a:after {
+	position: absolute;
+	display: block;
+	content: " ";
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 25px;
+	text-transform: uppercase;
+	background-color: #eaf2f6;
+	background-image: url(/pi/reference/icons/icon-arrow-closed.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.nextchapter_btn a {font-weight: bold;text-transform:uppercase}
+.aside {
+	font-size: 1.5em;
+	color: #777;
+	font-family: 'proxima_nova_ltlight', arial, sans-serif;
+	padding-left: 20px;
+	margin: 0 0 12px;
+}
+blockquote {
+	margin: 15px 25px;
+	padding: 15px 12px;
+    color: #111;
+    background: #fafafa;
+    border-left: 1em solid #eee;
+    font-size: 1.05em;
+    line-height: 1.45em;
+	overflow: hidden;
+}
+#interaction_checker {
+	background: #f1f1f1;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin: 10px 0;
+	padding: 10px 5px;
+	border: 1px solid #e4e4e4;
+}
+#MDICtextbox {
+	width: 250px;
+	padding: 2px;
+	border: 1px solid #cfcfcf;
+	-moz-box-shadow: 0 0 3px 0 #ababab;
+	-webkit-box-shadow: 0 0 3px 0 #ababab;
+	margin-top: -3px;
+}
+#interaction_checker h4 {padding-left: 5px;margin-bottom:7px}
+#interaction_checker h4.intfound {
+	padding-left: 5px;
+	background: #dce3d5;
+	color: #06F;
+	border: 0;
+}
+.intcheck_drugname {padding: 3px 0 3px 7px;float:left}
+#result_intcheck {
+	width: 175px;
+	border: solid 1px #aebdc5;
+	padding: 3px;
+}
+.intcheck_drugname2 {
+	width: 185px;
+	float: left;
+	padding: 0 5px;
+}
+.drugint_gobtn {
+	width: 25px;
+	padding: 4px 3px 4px 5px;
+	border-top: #fff solid 1px;
+	border-left: #fff solid 1px;
+	border-right: #aebdc5 solid 1px;
+	border-bottom: #aebdc5 solid 1px;
+	float: left;
+	cursor: pointer;
+}
+#intcheck_result {padding: 5px 5px 0 5px}
+#intcheck_result #drug_interlist li.serious:hover,#intcheck_result #drug_interlist li.contraindicated:hover,#intcheck_result #drug_interlist li.minor:hover,#intcheck_result #drug_interlist li.significant:hover {color: #007cb0;cursor:default}
+.topleft {
+	background: url(//img.medscape.com/pi/reference/rounded1.png) transparent top left no-repeat;
+	height: inherit;
+	width: inherit;
+	z-index: 50;
+}
+.sortby_btns {padding: 5px 0}
+#contraindicated_list,#serious_list,#significant_list,#minor_list {display: none}
+#MDICilfulllist {
+	display: none;
+	border: 1px solid #ccc1a8;
+	position: absolute;
+	z-index: 500;
+	width: 626px;
+	padding-left: 8px;
+	border-top-left-radius: 8px;
+	-moz-border-radius-topleft: 8px;
+	-webkit-border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	-moz-border-radius-bottomleft: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	background-color: #fff;
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10,Direction=135,Color='#696969');
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color='#696969')";
+	-moz-box-shadow: 3px 3px 10px #696969;
+	-webkit-box-shadow: 3px 3px 10px #696969;
+	box-shadow: 3px 3px 10px #696969;
+	height: 366px;
+	padding-top: 8px;
+	overflow: auto;
+}
+#MDICilfulllist p {
+	margin: 0;
+	padding: 4px 0 0 0;
+	background-color: #fff;
+}
+#MDICilfulllist ul {
+	list-style: square;
+	color: #e71;
+	margin: 0;
+	padding: 4px 0 0 18px;
+}
+#MDICilfulllist b {font-size: 15px}
+#MDICilfulllist ul li {padding-bottom: 4px;font-size:15px}
+#mdic_found_alert .nomdic {
+	background: none repeat scroll 0 0 #345b0e;
+	color: #fff;
+	margin: auto;
+	padding: 2px 0 2px 0;
+}
+.nomdic,.fmdic,#onedrug,#loading_img {display: none}
+#mdic_found_alert {font-weight: bold;text-align:center}
+#mdic_found_alert .fmdic {
+	background: none repeat scroll 0 0 #c00;
+	color: #fff;
+	margin: auto;
+	padding: 2px 0 2px 0;
+}
+.numints {padding-right: 3px}
+#samedid {
+	padding: 5px 0 5px 5px;
+	font-weight: bold;
+	color: #900;
+}
+.layerbg {
+	border: solid 1px #262626;
+	padding: 8px;
+	background-color: #dce3d5;
+	-moz-box-shadow: .2em .2em .5em #000,inset 0 0 10px #666;
+	-webkit-box-shadow: .2em .2em .5em #000;
+	box-shadow: .2em .2em .5em #000;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background-color: #bcbcbc;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RjZTFlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiY2JjYmMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,#dce1e5 0,#bcbcbc 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#dce1e5),color-stop(100%,#bcbcbc));
+	background: -webkit-linear-gradient(top,#dce1e5 0,#bcbcbc 100%);
+	background: -o-linear-gradient(top,#dce1e5 0,#bcbcbc 100%);
+	background: -ms-linear-gradient(top,#dce1e5 0,#bcbcbc 100%);
+	background: linear-gradient(to bottom,#dce1e5 0,#bcbcbc 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dce1e5',endColorstr='#bcbcbc',GradientType=0);
+}
+.clinref_imageborder {
+	background: #fff;
+	border: solid 1px #aaa;
+	padding: 5px;
+}
+#whiteoutlayer {
+	background-color: #000;
+	display: none;
+	height: 100%;
+	opacity: .50;
+	-moz-opacity: .50;
+	filter: alpha(opacity=50);
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.drugimage {margin-top: 5px}
+.imagelayer_ad {float: right;width:300px}
+.image_layer {
+	background: #fff;
+	height: 450px;
+	width: 630px;
+	text-align: center;
+	overflow-y: scroll;
+	border: #333 solid 1px;
+}
+.image_layer img {max-width: 610px}
+.imagelayer_rtcol {
+	width: 630px;
+	float: left;
+	padding-right: 5px;
+}
+#previmagebtn {float: left;background:url(//img.medscape.com/pi/reference/slide_backbtn.png) no-repeat}
+#previmagebtn.imagebtn_grey {background: url(//img.medscape.com/pi/reference/slide_backbtn1.png) no-repeat}
+#previmagebtn.imagebtn_grey a {cursor: default}
+#nextimagebtn {float: right;background:url(//img.medscape.com/pi/reference/slide_nextbtn.png) no-repeat right}
+#nextimagebtn.imagebtn_grey {background: url(//img.medscape.com/pi/reference/slide_nextbtn1.png) no-repeat right}
+#nextimagebtn.imagebtn_grey a {cursor: default}
+.slidebtn_bar {
+	margin: 5px 0;
+	background: url(//img.medscape.com/pi/reference/slide_barbg.png) repeat-x top;
+	width: 630px;
+}
+#clinref_imagecontainer {
+	z-index: 550;
+	position: fixed;
+	left: 50%;
+	margin-left: -480px;
+	top: 50px;
+	width: 980px;
+}
+#refimage_captions {
+	width: 630px;
+	height: 75px;
+	overflow-y: auto;
+	margin-top: 5px;
+}
+.closewindow {
+	color: #105781;
+	font-size: 11px;
+	margin-bottom: 8px;
+	text-align: right;
+	right: 5px;
+	position: absolute;
+	margin: -20px -20px 0 0;
+	z-index: 560;
+}
+.closewindow a {
+	background: url(//img.medscape.com/pi/reference/buttons/btn-ref-close.png) left top no-repeat;
+	display: block;
+	height: 27px;
+	width: 30px;
+}
+#ref_sponsorlayer .closewindow {position: relative;margin:0}
+#ref_sponsorlayer .closewindow a {
+	background: 0;
+	height: auto;
+	width: auto;
+	display: inline;
+}
+.closewindow a:hover {text-decoration: none}
+.layerbg1 {
+	border: 1px solid #262626;
+	padding: 8px;
+	-moz-box-shadow: .2em .2em .5em #000,inset 0 0 10px #666;
+	-webkit-box-shadow: .2em .2em .5em #000;
+	box-shadow: .2em .2em .5em #000;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background-color: #bcbcbc;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RjZTFlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiY2JjYmMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,#dce1e5 0,#bcbcbc 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#dce1e5),color-stop(100%,#bcbcbc));
+	background: -webkit-linear-gradient(top,#dce1e5 0,#bcbcbc 100%);
+	background: -o-linear-gradient(top,#dce1e5 0,#bcbcbc 100%);
+	background: -ms-linear-gradient(top,#dce1e5 0,#bcbcbc 100%);
+	background: linear-gradient(to bottom,#dce1e5 0,#bcbcbc 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dce1e5',endColorstr='#bcbcbc',GradientType=0);
+}
+#authordisclosures {
+	left: 50%;
+	margin-left: -310px;
+	top: 50px;
+	width: 650px;
+	position: absolute;
+	z-index: 500;
+}
+#aboutmedscape {
+	left: 50%;
+	margin-left: -325px;
+	top: 70px;
+	width: 650px;
+	position: absolute;
+	z-index: 500;
+	-moz-box-shadow: .2em .2em .5em #666;
+	-webkit-box-shadow: .2em .2em .5em #666;
+	box-shadow: .2em .2em .5em #666;
+}
+#aboutmedscape h2 {color: #345b0e}
+#abouteditorial {
+	left: 50%;
+	margin-left: -310px;
+	top: 50px;
+	width: 650px;
+	position: absolute;
+	z-index: 500;
+	-moz-box-shadow: .2em .2em .5em #666;
+	-webkit-box-shadow: .2em .2em .5em #666;
+	box-shadow: .2em .2em .5em #666;
+}
+.memberinfo {
+	border-bottom: 1px dotted #adadad;
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+.memberimg {
+	float: left;
+	margin: 2px 7px 0 0;
+	padding: 0 0 10px;
+	width: 96px;
+}
+.scrolllayer {
+	background: #fff;
+	overflow: -moz-scrollbars-vertical;
+	overflow-y: scroll;
+	padding: 8px;
+	border: 1px solid #262626;
+	max-height: 450px;
+}
+#aboutmedscape .closewindow {font-size: 0}
+#refimage_zoomlayer {
+	z-index: 750;
+	background: #fff;
+	padding: 5px;
+	top: 15px;
+	position: fixed;
+	max-width: 950px;
+	margin-left: -480px;
+	left: 50%;
+	border: 1px solid #aebdc5;
+}
+#refimage_zoomlayer img {border: 1px solid #000;max-width:950px}
+#refimg_num {
+	font-weight: bold;
+	text-align: center;
+	padding-top: 8px;
+}
+#handout .subheading {font-weight: bold}
+#handout .header {
+	font-family: Georgia,"Times New Roman",Times,serif;
+	font-size: 1.3em;
+	font-weight: bold;
+	color: #5d5d5d;
+}
+.handout_btns {background-color: #efead8}
+.handoutbtn {
+	float: right;
+	font-size: .9em;
+	text-align: center;
+	padding: 3px 10px;
+	margin: 2px;
+}
+.handout_officeinfo {
+	padding: 0;
+	margin: 10px 0 0 0;
+	float: right;
+	font-weight: bold;
+}
+.datatable {
+	background-color: #dce3d5;
+	border: 1px solid #c0c1c2;
+	font-size: 13px;
+}
+.inlinetable .datatable {margin-bottom: 10px}
+.widetable {font-size: 9px}
+.xwidetable {font-size: 6px}
+.table_scrolllayer {
+	width: 850px;
+	height: 460px;
+	overflow: auto;
+}
+.tablelayerbg {
+	margin-top: 30px;
+	left: 50%;
+	z-index: 300;
+	top: 50px;
+	margin-left: 50px;
+	border: solid 1px #262626;
+	padding: 8px;
+	-moz-box-shadow: .2em .2em .5em #000,inset 0 0 10px #666;
+	-webkit-box-shadow: .2em .2em .5em #000;
+	box-shadow: .2em .2em .5em #000;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background-color: #bcbcbc;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RjZTFlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiY2JjYmMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,#dce1e5 0,#bcbcbc 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#dce1e5),color-stop(100%,#bcbcbc));
+	background: -webkit-linear-gradient(top,#dce1e5 0,#bcbcbc 100%);
+	background: -o-linear-gradient(top,#dce1e5 0,#bcbcbc 100%);
+	background: -ms-linear-gradient(top,#dce1e5 0,#bcbcbc 100%);
+	background: linear-gradient(to bottom,#dce1e5 0,#bcbcbc 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dce1e5',endColorstr='#bcbcbc',GradientType=0);
+}
+.datatable {
+	margin: 0 5px 20px 5px;
+	border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: 1px solid #cbcbcb;
+}
+.datatable td, .datatable th {
+    padding: 4px 5px;
+    border-left: 1px solid #cbcbcb;
+    border-width: 0 0 0 1px;
+    font-size: inherit;
+    margin: 0;
+    overflow: visible;
+}
+.datatable td:first-child, .datatable th:first-child {
+    border-left-width: 0;
+}
+.datatable td {
+    background-color: #fff;
+    border-bottom: 1px solid #cbcbcb;
+}
+.datatable th, .datatable thead {
+	background-color: #eee;
+	border-bottom: 1px solid #cbcbcb;
+	font-weight: normal;
+}
+.datatable th p, .datatable thead p {
+	margin: 0;
+	padding: 0;
+}
+.datatable tbody>tr:last-child>td {
+    border-bottom-width: 0
+}
+.clinref_headingrow td {background-color: #dce3d5}
+.ref_videoplay {margin: 5px 0 0 15px}
+.drugdbsectioncontent .refsection_content ul li .ref_videoplay {margin: 5px 0 0 0}
+.aborder {
+	display: inline;
+	float: right;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+.clinref_references {
+	border: 1px solid #262626;
+	padding: 8px;
+	-moz-box-shadow: .2em .2em .5em #000,inset 0 0 10px #666;
+	-webkit-box-shadow: .2em .2em .5em #000;
+	box-shadow: .2em .2em .5em #000;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	background-color: #bcbcbc;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RjZTFlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiY2JjYmMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,#dce1e5 0,#bcbcbc 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#dce1e5),color-stop(100%,#bcbcbc));
+	background: -webkit-linear-gradient(top,#dce1e5 0,#bcbcbc 100%);
+	background: -o-linear-gradient(top,#dce1e5 0,#bcbcbc 100%);
+	background: -ms-linear-gradient(top,#dce1e5 0,#bcbcbc 100%);
+	background: linear-gradient(to bottom,#dce1e5 0,#bcbcbc 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dce1e5',endColorstr='#bcbcbc',GradientType=0);
+}
+#refrenceslayer {
+	width: 700px;
+	position: absolute;
+	left: 50%;
+	z-index: 511;
+	top: 75px;
+	margin-left: -350px;
+}
+.ref_layer {
+	background: #fff;
+	border: 1px solid #262626;
+	overflow-y: auto;
+	overflow-x: hidden;
+	max-height: 430px;
+	padding: 5px;
+}
+.quicklookupsearch {
+	height: 30px;
+	background: url(//img.medscape.com/pi/reference/quicklookup_bg.png) no-repeat top left;
+	width: 310px;
+	margin-bottom: 10px;
+}
+.quick_lookupinput {
+	float: left;
+	margin: 3px 0 0 0;
+	padding: 5px 0 0 5px;
+	border: 0;
+	width: 215px;
+	background: 0;
+	font-size: 11px;
+}
+.quicklookuplabel {
+	float: right;
+	width: 80px;
+	margin-right: 10px;
+}
+.quicklookup_gobtn {float: right}
+.quicklookupdd_btn {
+	cursor: pointer;
+	height: 30px;
+	background: url(//img.medscape.com/pi/reference/quicklookup_btn.png) right center no-repeat;
+}
+.quicklookup_selected {
+	margin: 8px 0 0 0;
+	float: left;
+	padding: 0 0 0 3px;
+	color: #007cb0;
+}
+#quicklookupdd {
+	position: absolute;
+	display: none;
+	margin-left: 220px;
+	margin-top: -13px;
+	background: url(//img.medscape.com/pi/reference/quicklookup_ddbg.png) repeat transparent;
+	padding: 5px;
+	z-index: 500px;
+}
+#quicklookupdd ul {
+	list-style: none;
+	font-weight: bold;
+	padding: 5px 0;
+	width: 80px;
+	background-color: #ebebeb;
+}
+#quicklookupdd ul li {padding: 2px}
+.quicklookup_box {
+	position: absolute;
+	background: #fff;
+	width: 300px;
+	max-height: 175px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	border: 1px solid #bbb;
+	display: none;
+	-moz-box-shadow: .2em .2em .5em #666;
+	-webkit-box-shadow: .2em .2em .5em #666;
+	box-shadow: .2em .2em .5em #666;
+	margin: 0;
+	padding: 0 0 0 5px;
+	z-index: 900;
+}
+.quicklookup_box a {color: #007cb0;line-height:20px}
+.quicklookup_box a:hover {
+	color: #000;
+	cursor: pointer;
+	text-decoration: none;
+	font-weight: bold;
+}
+.quicklookup_box div:hover {background: #eee}
+#drug_rtlinks {
+	font-size: .9em;
+	font-weight: bold;
+	padding: 7px 0;
+	margin: 10px 0;
+}
+#drug_rtlinks a {text-decoration: none}
+#drug_rtlinks a:hover {text-decoration: underline}
+#adtagfooter {padding: 0 0 5px 0;background:#fff}
+#articlefeedback {clear: both;padding:1px 5px 0 3px}
+.sharetwit {
+	background-image: url(//img.medscape.com/pi/global/icons/icon-share1.gif);
+	background-position: 3px center;
+	background-repeat: no-repeat;
+}
+.email {
+	background-image: url(//img.medscape.com/pi/global/icons/icon-email.gif);
+	background-position: 3px center;
+	background-repeat: no-repeat;
+}
+.sharefb {
+	background-image: url(//img.medscape.com/pi/global/icons/icon-share2.gif);
+	background-position: 3px center;
+	background-repeat: no-repeat;
+}
+div.custom_hover {cursor: pointer}
+span#addthistext {color: #000;cursor:pointer}
+span#addthistext:hover {
+	color: #000;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.hover_menu {
+	float: left;
+	width: 80px;
+	margin: 0;
+	position: absolute;
+	background: #fff;
+	border: 1px solid #adadad;
+	padding: 0;
+	display: none;
+	z-index: 400;
+}
+.hover_menu a {
+	padding: 4px 0 4px 22px;
+	position: relative;
+	margin-top: 4px;
+	display: block;
+	text-decoration: none;
+	cursor: pointer;
+}
+.hover_menu span {
+	position: absolute;
+	left: 14px;
+	top: 2px;
+}
+#ref_sponsorlayer {
+	left: 50%;
+	margin-left: -240px;
+	position: absolute;
+	padding: 10px;
+	width: 480px;
+	background: #fff;
+	border: 3px double #000;
+	z-index: 500;
+	-moz-box-shadow: .2em .2em .5em #666;
+}
+.ref_sponsortitle {display: inline;font-size:1.25em}
+#ref_sponsorbox a {
+	color: #007cb0;
+	text-decoration: none;
+	display: block;
+}
+#ref_sponsorbox a:link {color: #007cb0;text-decoration:none}
+#ref_sponsorbox a:visited {color: #007cb0;text-decoration:none}
+#ref_sponsorbox a:hover {color: #007cb0;text-decoration:underline}
+#ref_sponsorbox a:active {color: #007cb0;text-decoration:none}
+#lilly_ad_subtext {padding-left: 10px}
+#ref_sponsorbox {
+	margin: 10px 0;
+	padding: 7px 0 7px 15px;
+	text-align: left;
+	font-weight: bold;
+	border: 1px solid #c0c9bf;
+	border-color: #c8d2ba #92a675 #92a675 #c8d2ba;
+	background-color: #dce3d5;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.25,#cbd4c2),color-stop(0.75,#dce3d5));
+	background-image: -moz-linear-gradient(center bottom,#cbd4c2 25%,#dce3d5 75%);
+}
+#ref_sponsorbox ul {
+	list-style-type: disc;
+	margin: 0 0 0 14px;
+	padding: 0;
+	font-size: .9em;
+}
+#ref_sponsorbox ul li {border: 0;padding:0}
+.ifi_txt {
+	float: left;
+	padding-left: 2px;
+	font-size: 12px;
+}
+#sponsorad a {text-decoration: none}
+#ref_priceimgtable {
+	width: 100%;
+	border: 1px solid #aebdc5;
+	margin: 15px 0;
+	font-size: 1em;
+}
+#ref_priceimgtable td {border: 1px solid #dce3d5;padding:5px}
+#ref_priceimgtable .ref_headerrow th {
+	font-size: .95em;
+	padding: 10px 25px 10px 0;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	color: #5d5d5d;
+	border-right: 1px solid #aebdc5;
+	border-bottom: 1px solid #aebdc5;
+}
+#ref_priceimgtable .ref_headerrow td {
+	font-size: 1em;
+	padding: 10px 5px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	color: #5d5d5d;
+	border-bottom: 1px solid #aebdc5;
+	width: 80px;
+}
+#ref_priceimgtable img {width: 150px}
+#ref_priceimgtable .brand_manufacturer {
+	font-size: .9em;
+	margin: 0 0 0 15px;
+	display: none;
+}
+#previewimg {
+	position: absolute;
+	background: #fff;
+	padding: 5px;
+	border: 1px solid #000;
+	-moz-box-shadow: .2em .2em .5em #666;
+	-webkit-box-shadow: .2em .2em .5em #666;
+	box-shadow: .2em .2em .5em #666;
+	z-index: 950;
+}
+#ref_priceimgtable .preview {cursor: pointer}
+#ref_priceimgtable .header {
+	background: url(//img.medscape.com/pi/reference/updown_arrow.png) no-repeat right center;
+	border-right: 1px solid #dce3d5;
+	height: auto;
+	text-align: center;
+}
+#ref_priceimgtable .headerSortUp {background: url(//img.medscape.com/pi/reference/up_arrow.png) no-repeat right center}
+#ref_priceimgtable .headerSortDown {background: url(//img.medscape.com/pi/reference/down_arrow.png) no-repeat right center}
+#emailadexcontainer {
+	left: 50%;
+	margin-left: -310px;
+	position: absolute;
+	top: 70px;
+	width: 620px;
+	z-index: 500;
+}
+#emailtoolbox {
+	width: 615px;
+	text-align: left;
+	background-color: #dce3d5;
+	border: 2px solid #c0c1c2;
+	padding: 5px;
+	-moz-box-shadow: .2em .2em .5em #666;
+	-webkit-box-shadow: .2em .2em .5em #666;
+	box-shadow: .2em .2em .5em #666;
+}
+#emailtoolbox h6 {
+	margin: 0;
+	padding: 0 0 7px 0;
+	font-size: 1.3em;
+	color: #345b0e;
+	font-weight: bold;
+}
+#emailtoolbox p {padding: 0;margin:3px 0 4px 0}
+#emailtoolboxbg {
+	padding: 10px;
+	background-color: #fff;
+	border: 1px solid #c0c1c2;
+}
+#emailtoolboxbg .closebtn {float: right;font-size:.90em}
+#emailthiserror {
+	font-size: 1.25em;
+	color: #c00;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+#emailconfirmation {
+	font-family: verdana,sans-serif;
+	font-size: 1.35em;
+	color: #000;
+	font-weight: bold;
+	margin-top: 15px;
+}
+.emailtoolinput td {
+	padding: 3px 0 4px 0;
+	font-size: .95em;
+	white-space: nowrap;
+}
+.emailtoolinput td b {font-size: .9em}
+#emailtoolboxbg td p {font-size: .8em}
+.emailtoolinput td input {width: 440px}
+.emailtoolinput td textarea {width: 440px}
+.feedbckmsg {
+	resize: none;
+	font-family: arial,sans-serif;
+	font-size: 1.05em;
+}
+.feedbackconfirm {
+	text-align: center;
+	margin: 90px 0 110px 0;
+	font-size: 1.05em;
+	font-family: arial,sans-serif;
+}
+#feedlegal {
+	width: 100%;
+	padding-top: 10px;
+	color: #AAA;
+}
+#ref_print_options {
+	margin-top: 150px;
+	width: 500px;
+	margin-left: 250px;
+	top: 150px;
+	z-index: 500;
+	border: 1px solid #262626;
+	padding: 8px;
+	-moz-box-shadow: .2em .2em .5em #000,inset 0 0 10px #666;
+	-webkit-box-shadow: .2em .2em .5em #000;
+	box-shadow: .2em .2em .5em #000;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background-color: #bcbcbc;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RjZTFlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiY2JjYmMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,#dce1e5 0,#bcbcbc 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#dce1e5),color-stop(100%,#bcbcbc));
+	background: -webkit-linear-gradient(top,#dce1e5 0,#bcbcbc 100%);
+	background: -o-linear-gradient(top,#dce1e5 0,#bcbcbc 100%);
+	background: -ms-linear-gradient(top,#dce1e5 0,#bcbcbc 100%);
+	background: linear-gradient(to bottom,#dce1e5 0,#bcbcbc 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dce1e5',endColorstr='#bcbcbc',GradientType=0);
+}
+#ref_print_options .ref_layer {padding: 10px}
+#ref_print_options .closewindow {margin-top: -30px;*margin:-20px -7px 0 0}
+#ref_print_options ul {
+	list-style-type: none;
+	padding: 0 0 0 10px;
+	margin: 15px 0;
+}
+#ref_print_options ul li {
+	margin: 8px 10px 8px 0;
+	padding: 7px 0;
+	background: #dce8d0 url(//img.medscape.com/pi/reference/h1bg.png) repeat-x scroll center top;
+	border-top: 1px solid #dce3d5;
+	border-left: 1px solid #dce3d5;
+	border-right: 1px solid #c0c1c2;
+	border-bottom: 1px solid #c0c1c2;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+#ref_print_options ul li:hover {background-color: #FFC}
+#ref_print_options ul li a {
+	background: url(//img.medscape.com/pi/global/icons/icon-print.gif) 5px center no-repeat;
+	padding: 5px 5px 5px 25px;
+	display: block;
+}
+#ref_print_options ul li a:hover {text-decoration: none}
+#leftnav_links {
+	margin: 0 -10px 0 0;
+	display: block;
+	padding: 10px 7px 7px 7px;
+	font-family: 'proxima_nova_rgregular',arial,sans-serif;
+	font-size: 1.1em;
+	background: #fff;
+}
+#leftnav_links a {color: #000}
+#noleftnav_links {border: 0}
+#link_tablelist a {
+	font-weight: bold;
+	background: -moz-linear-gradient(center top,#b9d1a1 5%,#345b0e 100%);
+	background: #0064a3;
+	color: #fff;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	display: block;
+	padding: 5px 10px;
+}
+#multimedia_link_nonav {
+	margin: 0 0 0 15px;
+	font-size: .9em;
+	float: left;
+}
+#multimedia_link a {
+	background: url(//img.medscape.com/pi/reference/icons/icon-link-mm.png) no-repeat left center transparent;
+	display: block;
+	padding: 5px 0 5px 25px;
+	text-decoration: none;
+}
+#table_link a {
+	background: url(//img.medscape.com/pi/reference/icons/icon-link-table.png) no-repeat left center transparent;
+	display: block;
+	padding: 5px 0 5px 25px;
+	text-decoration: none;
+}
+#reference_link a {
+	background: url(//img.medscape.com/pi/reference/icons/icon-link-ref.png) no-repeat left center transparent;
+	display: block;
+	padding: 5px 0 5px 25px;
+	text-decoration: none;
+}
+#noleftnav_links .ref_leftlink {border: 0;float:left}
+#leftnav_links {margin: 10px 5px 10px 0;padding:0}
+.ref_leftlink {
+	border-bottom: 0;
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0.05,#fff),color-stop(1,#e7e7e7));
+	background: -moz-linear-gradient(center bottom,#e7e7e7 0,#fff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#e7e7e7');
+	padding: 8px 5px;
+	border: 1px solid #e7e7e7;
+}
+#multimedia_link_nonav .mm_link {
+	background: url(//img.medscape.com/pi/reference/icons/icon-refimg-gallery-sml.png) no-repeat left center;
+	display: block;
+	font-weight: bold;
+	padding: 5px 0 5px 25px;
+}
+#clinref_tablelayer {
+	z-index: 510;
+	position: fixed;
+	top: 50px;
+	width: 950px;
+	height: 480px;
+	left: 50%;
+	margin-left: -475px;
+}
+.tablelayerbg {margin: 0}
+#clinref_tablelayer .datatable {
+	background-color: #dce3d5;
+	border: 1px solid #c0c1c2;
+	font-size: 13px;
+	margin: auto;
+}
+#prevtablebtn {float: left;background:url(//img.medscape.com/pi/reference/buttons/btn-backtable-blue.png) no-repeat top}
+#prevtablebtn.tablebtn_grey {background: url(//img.medscape.com/pi/reference/buttons/btn-backtable-gray.png) no-repeat top}
+#prevtablebtn.tablebtn_grey a {cursor: default}
+#nexttablebtn {float: right;background:url(//img.medscape.com/pi/reference/buttons/btn-nexttable-blue.png) no-repeat top right}
+#nexttablebtn.tablebtn_grey {background: url(//img.medscape.com/pi/reference/buttons/btn-nexttable-gray.png) no-repeat top right}
+#nexttablebtn.tablebtn_grey a {cursor: default}
+.tablelayer_bar {margin: 5px 0;width:630px}
+#reftable_num {
+	font-weight: bold;
+	text-align: center;
+	padding-top: 8px;
+}
+.tablelayer_content {background: #fff;padding:5px}
+#tablelist_layer ul {
+	list-style: none;
+	padding: 10px;
+	margin: 0;
+}
+.table_title {height: 35px;font-weight:bold}
+.tablelayer_bg {
+	background: #fff;
+	clear: both;
+	border: 1px solid #262626;
+}
+#link_tablelist {
+	display: none;
+	float: left;
+	margin: -30px 0 0 10px;
+	position: absolute;
+}
+#tablelist_layer ul li {padding: 10px 5px;border-bottom:1px solid #dce3d5}
+.tablelist {
+	background-color: #fff;
+	padding: 8px;
+	height: 460px;
+	overflow-y: auto;
+}
+.table_layer_bar {width: 300px;margin:auto}
+.table_scrolllayer {
+	width: 920px;
+	height: 400px;
+	overflow: auto;
+}
+#dose_calc_layer {
+	left: 50%;
+	margin-left: -332px;
+	position: absolute;
+	width: 665px;
+	z-index: 500;
+}
+#dose_calc {background: #fff}
+#dose_calc_layer .ref_layer {
+	max-height: 430px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	padding: 0;
+}
+a.calc_link {
+	background: url(//img.medscape.com/pi/reference/icons/icon-dosecalc.png) no-repeat left center;
+	margin: 3px;
+	padding: 0 0 5px 20px;
+}
+a.calc_link:hover {text-decoration: none}
+.sect2 p.sect2title {margin-top: 3px;margin-bottom:5px}
+.sect2 p {padding-left: 5px;margin-bottom:8px}
+.sect1 .sect2 {margin-bottom: 10px}
+.twoline_h3 {
+	color: #444;
+	font-size: .9em;
+	padding: 2px 0 0 0;
+	display: block;
+}
+#drugdbmain h2 {font-size: 1.3em}
+#drugdbmain #content_0 h3 {
+	border-bottom: 0;
+	background: #f1f1f1;
+	border-radius: 5px 5px 0 0;
+	text-shadow: 1px 1px 0 #fff;
+	padding: 5px 3px;
+}
+#drugdbmain .sect1_collapse h3,#drugdbmain #content_0 .sect1_collapse h3 {
+	background: #efefef;
+	border-radius: 5px;
+	padding: 7px 5px;
+	margin-bottom: 0;
+	background: url(//img.medscape.com/pi/reference/buttons/btn-drug-expand.png) no-repeat 99% center #f1f1f1;
+	cursor: pointer;
+	border: 0;
+	color: #000;
+	text-decoration: underline;
+}
+#dose_ped,#dose_ger {display: none}
+#drugdbmain h3.drug_expand,#drugdbmain #content_0 h3.drug_expand {background: url(//img.medscape.com/pi/reference/buttons/btn-drug-collapse.png) no-repeat 99% center #f1f1f1}
+#drugdbmain .sect2 h3.drug_expand,#drugdbmain #content_0 .sect1_collapse.sect2 h3 {background-color: #fff}
+#drugdbmain .sect1_collapse .sect2 {display: none;padding:0 5px}
+#li_5.has_bbinfo a {background: url(//img.medscape.com/pi/reference/icons/icon-bbox.png) no-repeat 50% center;padding:2px 0}
+#li_5.has_bbinfo.current_section a {background: url(//img.medscape.com/pi/reference/icons/icon-bbox.png) no-repeat 55% center transparent}
+#drugdbmain .sect1_collapse {
+	border: 1px solid #e4e4e4;
+	margin: 5px 0 15px 0;
+	border-radius: 5px;
+}
+.drugdbsectioncontent .refsection_content .sect2 ul {
+	padding: 0;
+	list-style: none;
+	margin-left: 5px;
+}
+.drugdbsectioncontent .refsection_content .sect2 p {padding: 0 0 0 5px}
+.drugdbsectioncontent .refsection_content .sect1 p {padding: 0 0 0 5px}
+.drugdbsectioncontent .refsection_content .sect_dosing_forms .sect2 ul {
+	padding: 0;
+	list-style: disc;
+	margin-left: 30px;
+}
+.fade-collapse-more {display:none}
+#dose_tabs {
+	border-bottom: 1px solid #c0c9bf;
+	padding-left: 20px;
+	margin-bottom: 10px;
+}
+#dose_tabs span {
+	margin: 5px 5px -1px 5px;
+	padding: 7px 16px 6px 16px;
+	display: inline-block;
+	cursor: pointer;
+	color: #000;
+	background-color: #d9e6ee;
+	background: -moz-linear-gradient(top,#fff 0,#d9e6ee);
+	background: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#d9e6ee));
+	border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	border: 1px solid #c0c9bf;
+	-moz-box-shadow: inset 0 0 5px rgba(255,255,255,0.7);
+	-webkit-box-shadow: inset 0 0 5px rgba(255,255,255,0.7);
+	text-shadow: 0 1px 1px #fff;
+	font-family: 'proxima_nova_ltsemibold',arial,sans-serif;
+	font-size: 1.1em;
+}
+#dose_tabs span.opentab {
+	padding: 7px 16px 6px 16px;
+	cursor: auto;
+	color: #000;
+	background-color: #fff;
+	background: -moz-linear-gradient(top,#deddde 0,#fff);
+	background: -webkit-gradient(linear,left top,left bottom,from(#deddde),to(#fff));
+	-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	border-top: 1px solid #c0c9bf;
+	border-right: 1px solid #c0c9bf;
+	border-bottom: 1px solid #fff;
+	border-left: 1px solid #c0c9bf;
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.7);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.7);
+}
+#content_0 .dose_forms ul {margin: 0;padding:0}
+#content_0 .dose_forms ul li {
+	display: inline-block;
+	padding: 2px 10px;
+	border: 1px dotted #e4e4e4;
+	margin: 5px 0 0 0;
+}
+.bbinfo {
+	border: 1px solid #333;
+	padding: 5px;
+	margin: 10px 3px;
+}
+#drugdbmain #content_0 .sec2_collapse .sect2title {
+	display: inline-block;
+	border: 0 solid #eaeaea;
+	background: url(//img.medscape.com/pi/reference/buttons/btn-subsec-expand.png) no-repeat 99% center #fff;
+	padding-right: 20px;
+	color: #007cb0;
+	cursor: pointer;
+}
+	#drugdbmain #content_0 .sec2_collapse .sect2title.subsec_expand {background: url(//img.medscape.com/pi/reference/buttons/btn-subsec-collapse.png) no-repeat 99% center #fff}
+#content_0 .sect1 {
+	border: 1px solid #e1e1e1;
+	border-radius: 7px;
+	margin: 5px 0 15px;
+}
+.sect2.sec2_collapse .sect2 {
+	display: none;
+	margin-top: 0;
+	margin: 0 5px 10px 5px;
+	padding: 5px;
+}
+#content_0 .sect1 .sect2 {
+	border-top: 1px solid #ededed;
+	margin: 0;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+#content_0 .sect1 .sect2 .sect2 {border-bottom: 0}
+.sec3_collapse .sect3title {color: #007cb0;cursor:pointer}
+#pcategory {background: #fff;border:0}
+#leftcol {_width: 650px}
+#maincolboxdrugdbheader h1 {_position: relative;_text-shadow:none}
+#topic_menu ul li {_padding: 2px 15px}
+#leftnav {_width: 180px}
+.clinref_references {_width: 700px}
+.ref_layer {_overflow: auto;_height:430px}
+.image_layer {_overflow: scroll}
+.image_layer img {_width: auto}
+.scrolllayer {_height: 450px;_overflow:auto}
+.tablelayerbg {
+	_margin-left: 0;
+	_width: 750px;
+	_height: 475px;
+	_overflow: auto;
+}
+.table_scrolllayer {_width: 740px;_height:450px}
+.fs_collapse {display: none}
+#fs_tabs {display: none}
+#fs_tabs_content {padding: 15px 5px 0 5px}
+	#fs_tabs_content table {
+margin: 0 0 15px 0;
+border-top: 1px solid #cfcfcf;
+border-left: 1px solid #cfcfcf;
+width: 100%;
+}
+#fs_tabs_content table td {
+	padding: 8px 10px 8px 10px;
+	border-right: 1px solid #cfcfcf;
+	border-bottom: 1px solid #cfcfcf;
+}
+#fs_tabs_content table th {
+	padding: 10px;
+	border-right: 1px solid #cfcfcf;
+	border-bottom: 1px solid #cfcfcf;
+	-moz-box-shadow: 0 3px 3px rgba(214,214,214,1);
+	-webkit-box-shadow: 0 3px 3px rgba(214,214,214,1);
+	background-color: #fcfcfc;
+}
+.accordion {border-bottom: solid 1px #cfcfcf}
+	.accordion .expandLink {
+margin: 0;
+padding: 8px 10px;
+background: #fdfdfd url(//img.medscape.com/pi/reference/icons/icon-arrow-square.gif) no-repeat right -47px;
+border: solid 1px #cfcfcf;
+border-bottom: 0;
+color: #0067a1;
+font-weight: bold;
+cursor: pointer;
+}
+.accordion .expandLink:hover {background-color: #fcfcfc}
+.accordion .expandLink.active {background-position: right 5px}
+	.accordion .expandContent {
+margin: 0;
+padding: 0;
+background: #fdfdfd;
+border-left: solid 1px #cfcfcf;
+border-right: solid 1px #cfcfcf;
+display: none;
+}
+#fs_tabs {background: url("//img.medscape.com/pi/reference/ornaments/bg-fs-tabs-btm.png") no-repeat bottom left;text-align:center}
+	#fs_tabs span {
+margin: 5px 5px 0 5px;
+padding: 7px 16px 6px 16px;
+display: inline-block;
+cursor: pointer;
+color: #545454;
+background-color: #deddde;
+background: -moz-linear-gradient(top,#deddde 0,#fff);
+background: -webkit-gradient(linear,left top,left bottom,from(#deddde),to(#fff));
+border-radius: 10px 10px 0 0;
+-moz-border-radius: 10px 10px 0 0;
+-webkit-border-radius: 10px 10px 0 0;
+border: 1px solid #c0c9bf;
+-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.7);
+-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.7);
+text-shadow: 0 1px 1px rgba(000,000,000,0.2),0 -1px 0 rgba(255,255,255,1);
+}
+#fs_tabs span.fsopentab {
+	padding: 7px 16px 6px 16px;
+	font-weight: bold;
+	cursor: auto;
+	color: #325b00;
+	background-color: #fff;
+	background: -moz-linear-gradient(top,#deead2 0,#fff);
+	background: -webkit-gradient(linear,left top,left bottom,from(#deead2),to(#fff));
+	border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	border-top: 1px solid #c0c9bf;
+	border-right: 1px solid #c0c9bf;
+	border-bottom: 1px solid #fff;
+	border-left: 1px solid #c0c9bf;
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.7);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.7);
+	text-shadow: 0 1px 1px rgba(000,000,000,0.2),0 -1px 0 rgba(255,255,255,1);
+}
+#noInfo {padding: 15px 0 15px 0;text-align:center}
+#fs_select p {
+	margin: 0;
+	padding: 0 0 8px 0;
+	font-weight: bold;
+}
+#fs_select ul {margin: 0 0 0 28px;padding:0}
+	#fs_select ul li {
+margin: 0;
+padding: 0 0 6px 0;
+list-style: square;
+}
+#fs_select ul li a {font-weight: bold}
+#createList {display: none}
+#fs_selectMenu {padding: 0 0 10px 0;font-weight:bold}
+#select_label {display: none;font-weight:bold}
+select#brands {
+	overflow: hidden;
+	font-size: 1.2em;
+	margin-left: 10px;
+}
+.createLink {
+	margin: 15px 0 20px 115px;
+	padding: 5px 10px 4px 10px;
+	color: #0064a7;
+	background: -moz-linear-gradient(top,#fff 0,#cadfec);
+	background: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#cadfec));
+	background-color: #cadfec;
+	border-radius: 9px;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	border: 1px solid #aaa9a9;
+	-moz-box-shadow: 0 1px 3px rgba(000,000,000,0.5),inset 0 -1px 3px rgba(255,255,255,1);
+	-webkit-box-shadow: 0 1px 3px rgba(000,000,000,0.5),inset 0 -1px 3px rgba(255,255,255,1);
+	text-shadow: 0 -1px 0 rgba(000,000,000,0.2),0 1px 0 rgba(255,255,255,1);
+	width: 175px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.0;
+}
+ul {
+	margin: 0 0 0 30px;
+	padding: 0;
+	list-style: square;
+}
+	ul li {margin: 0;padding:0 0 8px 0}
+#fs_brandinfoMain {display: none;margin-top:15px}
+.planLink a {
+	float: right;
+	padding: 4px 10px 3px 10px;
+	color: #0064a7;
+	background: -moz-linear-gradient(top,#fff 0,#cadfec);
+	background: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#cadfec));
+	background-color: #cadfec;
+	border-radius: 9px;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	border: 1px solid #aaa9a9;
+	-moz-box-shadow: inset 0 -1px 3px rgba(255,255,255,1);
+	-webkit-box-shadow: inset 0 -1px 3px rgba(255,255,255,1);
+	text-shadow: 0 -1px 0 rgba(000,000,000,0.2),0 1px 0 rgba(255,255,255,1);
+	font-weight: normal;
+	font-size: .95em;
+}
+#fs_select_single {font-weight: bold;margin-bottom:10px}
+.planLabel {
+	margin: 4px 0 0 4px;
+	display: inline;
+	display: inline-block;
+}
+.plan {padding: 0 0 8px 0;font-weight:bold}
+.restriction {padding: 4px 0 4px 0}
+.disclaimer {padding: 0 0 8px 0;font-size:.85em}
+#tiersRestrictions {padding: 10px;background-color:#fdfdfd}
+	#tiersRestrictions th {
+text-align: center;
+font-weight: bold;
+text-transform: uppercase;
+}
+	#tiersRestrictions td {background-color: #fff}
+#tiersRestrictions td.keyCol {
+	text-align: center;
+	font-weight: bold;
+	background-color: #fcfcfc;
+}
+#planLayer {
+	margin-left: -370px;
+	left: 50%;
+	width: 750px;
+	height: 420px;
+	z-index: 500;
+}
+.planNameLabel {font-weight: bold}
+#planLayer .header {
+	margin: 0;
+	padding: 5px 6px 5px 6px;
+	border: 1px solid #a7a7a7;
+	background-color: #eaf2f6;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkMmU5ZjQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,#fff 0,#d2e9f4 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#d2e9f4));
+	background: -webkit-linear-gradient(top,#fff 0,#d2e9f4 100%);
+	background: -o-linear-gradient(top,#fff 0,#d2e9f4 100%);
+	background: -ms-linear-gradient(top,#fff 0,#d2e9f4 100%);
+	background: linear-gradient(to bottom,#fff 0,#d2e9f4 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#d2e9f4',GradientType=0);
+}
+#planLayer .closewindow {
+	margin: 5px 10px 0 0;
+	padding: 4px 8px 3px 8px;
+	font-size: .9em;
+	color: #fff;
+	background: -moz-linear-gradient(top,#7db4e4 0,#105a9b 50%,#7db4e4);
+	background: -webkit-gradient(linear,left top,left bottom,from(#7db4e4),color-stop(0.50,#105a9b),to(#7db4e4));
+	background-color: #7db4e4;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border: 1px solid #a7a7a7;
+	-moz-box-shadow: inset 0 1px 5px rgba(255,255,255,1);
+	-webkit-box-shadow: inset 0 1px 5px rgba(255,255,255,1);
+	text-shadow: 0 -1px 0 rgba(000,000,000,0.2),0 0 0 rgba(255,255,255,0);
+}
+#fs_tabs_content #planLayer .closewindow a span {visibility: visible}
+#Drname {font-weight: bold}
+#planLayer .closewindow a {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-weight: bold;
+	background: 0;
+	width: auto;
+	height: auto;
+}
+#planLayer .header .title {display: none}
+#planLayer .header .physician {padding: 3px 5px 3px 5px}
+#planLayer .header .name {font-weight: bold}
+#planLayer .state {
+	margin: 0;
+	padding: 7px 0 7px 0;
+	border-right: 1px solid #a7a7a7;
+	border-left: 1px solid #a7a7a7;
+	text-align: center;
+	font-weight: bold;
+	background-color: #fff;
+}
+#planLayer p.instructions {display: none}
+#planLayer #fstab_nonMedicare {
+	margin: 0;
+	padding: 5px 0 5px 0;
+	width: 365px;
+	background-color: #eceded;
+	background: -moz-linear-gradient(top,#fff 0,#deddde);
+	background: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#deddde));
+	border: 1px solid #a7a7a7;
+	font-weight: bold;
+	text-align: center;
+	float: left;
+}
+#planLayer #fstab_medicare {
+	margin: 0;
+	padding: 5px 0 5px 0;
+	width: 364px;
+	background-color: #eceded;
+	background: -moz-linear-gradient(top,#fff 0,#deddde);
+	background: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#deddde));
+	border-top: 1px solid #a7a7a7;
+	border-right: 1px solid #a7a7a7;
+	border-bottom: 1px solid #a7a7a7;
+	font-weight: bold;
+	text-align: center;
+	float: left;
+}
+#planLayer #fs_planList {
+	height: 323px;
+	background: url("//img.medscape.com/pi/reference/ornaments/bg-plan-layer.png") repeat-y top center #fff;
+	border-right: 1px solid #a7a7a7;
+	border-bottom: 1px solid #a7a7a7;
+	border-left: 1px solid #a7a7a7;
+	overflow: auto;
+	overflow-y: scroll;
+}
+#fs_nonMedicare,#fs_medicare {overflow: visible;position:relative}
+#planLayer ul {list-style: none}
+#planLayer ul .savedPlan:before {
+	color: #345b0e;
+	content: "saved";
+	font-size: .9em;
+	margin-left: -35px;
+	padding-right: 5px;
+}
+#planLayer ul .unsavedPlan:before {
+	color: #345b0e;
+	content: "removed";
+	font-size: .9em;
+	margin-left: -42px;
+	padding-right: 0;
+}
+#planLayer ul.nonMedicare {
+	margin: 0 10px 0 45px;
+	padding: 15px 0 10px 0;
+	width: 320px;
+	float: left;
+	position: relative;
+	overflow: visible;
+}
+#planLayer ul.nonMedicare li {margin: 0;padding:0 0 10px 0}
+#planLayer ul.nonMedicare li .status {
+	margin: 0 0 0 -45px;
+	color: #365700;
+	font-size: .95em;
+	font-weight: bold;
+	display: inline;
+	width: 45px;
+	visibility: hidden;
+}
+#planLayer ul.medicare {
+	margin: 0 0 0 45px;
+	padding: 15px 0 10px 0;
+	list-style: none;
+	width: 290px;
+	overflow: visible;
+	float: left;
+	position: relative;
+}
+#planLayer ul.medicare li {margin: 0;padding:0 0 10px 0}
+#planLayer ul.medicare li .status {
+	margin: 0 0 0 -45px;
+	color: #365700;
+	font-size: .9em;
+	display: inline;
+	width: 45px;
+	display: none;
+}
+#compareLayer {
+	margin-left: -300px;
+	left: 50%;
+	width: 600px;
+	height: 420px;
+	z-index: 500;
+	border: 1px solid #262626;
+	padding: 8px;
+	-moz-box-shadow: .2em .2em .5em #000,inset 0 0 10px #666;
+	-webkit-box-shadow: .2em .2em .5em #000;
+	box-shadow: .2em .2em .5em #000;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background-color: #bcbcbc;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RjZTFlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiY2JjYmMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,#dce1e5 0,#bcbcbc 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#dce1e5),color-stop(100%,#bcbcbc));
+	background: -webkit-linear-gradient(top,#dce1e5 0,#bcbcbc 100%);
+	background: -o-linear-gradient(top,#dce1e5 0,#bcbcbc 100%);
+	background: -ms-linear-gradient(top,#dce1e5 0,#bcbcbc 100%);
+	background: linear-gradient(to bottom,#dce1e5 0,#bcbcbc 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dce1e5',endColorstr='#bcbcbc',GradientType=0);
+}
+#compareLayer .header {
+	margin: 0;
+	padding: 5px 6px 5px 6px;
+	border: 1px solid #a7a7a7;
+	width: 586px;
+	background-color: #eaf2f6;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkMmU5ZjQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,#fff 0,#d2e9f4 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#d2e9f4));
+	background: -webkit-linear-gradient(top,#fff 0,#d2e9f4 100%);
+	background: -o-linear-gradient(top,#fff 0,#d2e9f4 100%);
+	background: -ms-linear-gradient(top,#fff 0,#d2e9f4 100%);
+	background: linear-gradient(to bottom,#fff 0,#d2e9f4 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#d2e9f4',GradientType=0);
+}
+#compareLayer .header .title {
+	padding: 5px 5px 2px 5px;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+#compareLayer .class_name {
+	font-weight: bold;
+	font-size: 1.05em;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+#compareLayer .header p {
+	margin: 0;
+	padding: 0 5px 5px 5px;
+	display: none;
+}
+#compareLayer #compareSingle {
+	padding: 10px;
+	font-weight: bold;
+	background-color: #fff;
+}
+#compareLayer #compareList {
+	padding: 15px 10px 0 10px;
+	height: 368px;
+	background-color: #fff;
+	border-right: 1px solid #a7a7a7;
+	border-bottom: 1px solid #a7a7a7;
+	border-left: 1px solid #a7a7a7;
+	overflow: auto;
+}
+#compareLayer .compareListSingle {
+	padding: 0;
+	height: 328px;
+	background-color: #fff;
+	overflow: auto;
+}
+#compareLayer #compareList .expandContent {padding: 10px}
+#compareLayer #compareList .compareTable {
+	margin: 0 0 15px 0;
+	border-top: 1px solid #a7a7a7;
+	border-left: 1px solid #a7a7a7;
+	width: 99%;
+}
+#compareLayer #compareList .compareTable td {
+	padding: 8px 10px 8px 10px;
+	border-right: 1px solid #a7a7a7;
+	border-bottom: 1px solid #a7a7a7;
+	background-color: #fff;
+}
+#compareLayer #compareList .compareTable th {
+	padding: 5px 10px 4px 10px;
+	border-right: 1px solid #a7a7a7;
+	border-bottom: 1px solid #a7a7a7;
+	background-color: #eceded;
+	background: -moz-linear-gradient(top,#fff 0,#deddde);
+	background: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#deddde));
+}
+#compareLayer .compareListSingle .compareTable th {
+	background-color: #eceded;
+	background: -moz-linear-gradient(top,#fff 0,#deddde);
+	background: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#deddde));
+}
+#compareLayer .closewindow span {display: none}
+#fs_discount {display: none}
+#fs_discount .discountsTable td.discount {font-weight: bold}
+#fs_discount .discountsTable td a {font-weight: bold}
+#fs_discount .discountsTable .info {
+	margin: 4px 25px 4px 10px;
+	padding: 0 0 0 40px;
+	background: url("//img.medscape.com/pi/reference/icons/icon-exclamation.png") no-repeat top left;
+}
+#fs_discount #shareOffers .shareButton {
+	margin: 0 0 20px 130px;
+	padding: 6px 10px 5px 10px;
+	color: #0064a7;
+	background: -moz-linear-gradient(top,#fff 0,#cadfec);
+	background: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#cadfec));
+	background-color: #cadfec;
+	border-radius: 9px;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	border: 1px solid #aaa9a9;
+	-moz-box-shadow: 0 1px 3px rgba(000,000,000,0.5),inset 0 -1px 3px rgba(255,255,255,1);
+	-webkit-box-shadow: 0 1px 3px rgba(000,000,000,0.5),inset 0 -1px 3px rgba(255,255,255,1);
+	text-shadow: 0 -1px 0 rgba(000,000,000,0.2),0 1px 0 rgba(255,255,255,1);
+	font-weight: normal;
+	font-size: 1.0;
+	width: 155px;
+}
+#fs_discount p.offersLink {
+	margin: 0 0 25px 15px;
+	padding: 0 0 0 10px;
+	background: url("//img.medscape.com/pi/reference/icons/icon-arrow-closed.gif") no-repeat top left;
+	font-weight: bold;
+}
+#retailer {padding: 0 0 15px 0}
+#retailer .header {
+	padding: 6px 10px 5px 10px;
+	background: -moz-linear-gradient(top,#fff 0,#dededf);
+	background: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#dededf));
+	background-color: #dededf;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	font-weight: bold;
+}
+#retailer .retailerTable {-moz-box-shadow: 0 3px 3px rgba(214,214,214,1);-webkit-box-shadow:0 3px 3px rgba(214,214,214,1)}
+#fs_tabs_content #retailer .retailerTable {border-right: 1px solid #ccc}
+#fs_tabs_content #retailer .retailerTable td {
+	padding: 13px 15px 12px 15px;
+	background-color: #f8fafc;
+	border-right: 0;
+}
+#patientAssistance .title {
+	margin: 0 0 15px 0;
+	padding: 0 0 4px 0;
+	font-weight: bold;
+	border-bottom: 2px solid #dce9cf;
+}
+#fs_discount .program {margin: 0;padding:10px}
+#fs_discount .program .subtitle {border-bottom: 2px solid #ccc}
+#fs_discount .program .subtitle {
+	margin: 0 0 8px 0;
+	padding: 0 0 4px 0;
+	border-bottom: 1px solid #ccc;
+	font-weight: bold;
+}
+#fs_discount .program ul.contact {
+	margin: 0;
+	padding: 0;
+	list-style: none inside none;
+}
+#fs_discount .program ul.contact li {
+	margin: 0;
+	padding: 0 20px 0 10px;
+	display: inline;
+}
+#fs_discount .program .applicationForms {
+	margin: 15px 10px 15px 10px;
+	padding: 6px 8px 0 6px;
+	border: 1px solid #bbb;
+	background-color: #fcfcfc;
+	-moz-box-shadow: 0 3px 3px rgba(214,214,214,1);
+	-webkit-box-shadow: 0 3px 3px rgba(214,214,214,1);
+}
+#fs_discount .program .applicationForms .title {
+	margin: 0 0 5px;
+	padding: 0;
+	font-weight: bold;
+	font-size: 1.05em;
+	border: 0;
+}
+#fs_discount .program .applicationForms ul {
+	margin: 0 0 0 25px;
+	padding: 0 0 15px 0;
+	list-style: square;
+	width: 250px;
+	float: left;
+}
+	#fs_discount .program .applicationForms ul li {margin: 0;padding:0 0 2px 0}
+#fs_discount .program .applicationForms .button {
+	padding: 5px 10px 4px 10px;
+	color: #0064a7;
+	background: -moz-linear-gradient(top,#fff 0,#cadfec);
+	background: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#cadfec));
+	background-color: #cadfec;
+	border-radius: 9px;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	border: 1px solid #aaa9a9;
+	-moz-box-shadow: 0 1px 3px rgba(000,000,000,0.5),inset 0 -1px 3px rgba(255,255,255,1);
+	-webkit-box-shadow: 0 1px 3px rgba(000,000,000,0.5),inset 0 -1px 3px rgba(255,255,255,1);
+	text-shadow: 0 -1px 0 rgba(000,000,000,0.2),0 1px 0 rgba(255,255,255,1);
+	font-weight: normal;
+	font-size: .95em;
+	width: 80px;
+	text-align: center;
+	float: left;
+}
+#fs_tabs_content #fs_discount .program table.programTable,#fs_tabs_content #fs_discount .program table.programTable td {border: 0}
+#fs_discount .program table td.type {font-weight: bold}
+#fs_discount .program p.moreInfo {padding: 10px 0 0 0;border-top:1px solid #ccc}
+#emailLayer,#emailFormsLayer {
+	margin: 175px 0 0 -270px;
+	left: 50%;
+	width: 500px;
+	z-index: 500;
+	font-size: 1.05em;
+	border: 1px solid #262626;
+	padding: 8px;
+	-moz-box-shadow: .2em .2em .5em #000,inset 0 0 10px #666;
+	-webkit-box-shadow: .2em .2em .5em #000;
+	box-shadow: .2em .2em .5em #000;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background-color: #bcbcbc;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RjZTFlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiY2JjYmMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,#dce1e5 0,#bcbcbc 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#dce1e5),color-stop(100%,#bcbcbc));
+	background: -webkit-linear-gradient(top,#dce1e5 0,#bcbcbc 100%);
+	background: -o-linear-gradient(top,#dce1e5 0,#bcbcbc 100%);
+	background: -ms-linear-gradient(top,#dce1e5 0,#bcbcbc 100%);
+	background: linear-gradient(to bottom,#dce1e5 0,#bcbcbc 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dce1e5',endColorstr='#bcbcbc',GradientType=0);
+}
+#emailLayer .header,#emailFormsLayer .header {
+	margin: 0;
+	padding: 5px 6px 5px 6px;
+	border: 1px solid #a7a7a7;
+	width: 486px;
+	background-color: #eaf2f6;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkMmU5ZjQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,#fff 0,#d2e9f4 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#d2e9f4));
+	background: -webkit-linear-gradient(top,#fff 0,#d2e9f4 100%);
+	background: -o-linear-gradient(top,#fff 0,#d2e9f4 100%);
+	background: -ms-linear-gradient(top,#fff 0,#d2e9f4 100%);
+	background: linear-gradient(to bottom,#fff 0,#d2e9f4 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#d2e9f4',GradientType=0);
+}
+#emailLayer .header .title,#emailFormsLayer .header .title {
+	padding: 5px 5px 2px 5px;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+#emailLayer .content,#emailFormsLayer .content {
+	margin: 0;
+	padding: 15px 20px 20px 20px;
+	background-color: #fff;
+	border-right: 1px solid #a7a7a7;
+	border-bottom: 1px solid #a7a7a7;
+	border-left: 1px solid #a7a7a7;
+}
+#emailLayer .content p,#emailFormsLayer .content p {margin: 0;padding:7px 0 8px 0}
+#emailLayer p.sendCopy,#emailFormsLayer p.sendCopy {margin: 0;padding:0 0 8px 23px}
+#emailLayer .content p.alert,#emailFormsLayer .content p.alert {
+	margin: 4px 25px 10px 0;
+	padding: 0 0 0 40px;
+	background: url("//img.medscape.com/pi/reference/icons/icon-exclamation.png") no-repeat top left;
+	font-weight: bold;
+}
+#emailLayer .emailButton,#emailFormsLayer .emailButton {
+	margin: 10px 0 0 195px;
+	padding: 6px 10px 5px 10px;
+	color: #0064a7;
+	background: -moz-linear-gradient(top,#fff 0,#cadfec);
+	background: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#cadfec));
+	background-color: #cadfec;
+	border-radius: 9px;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	border: 1px solid #aaa9a9;
+	-moz-box-shadow: 0 1px 3px rgba(000,000,000,0.5),inset 0 -1px 3px rgba(255,255,255,1);
+	-webkit-box-shadow: 0 1px 3px rgba(000,000,000,0.5),inset 0 -1px 3px rgba(255,255,255,1);
+	text-shadow: 0 -1px 0 rgba(000,000,000,0.2),0 1px 0 rgba(255,255,255,1);
+	font-weight: normal;
+	font-size: 1.0;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	width: 50px;
+	float: left;
+}
+#emailLayer input,#emailFormsLayer input {font-size: 1.0;color:#444}
+#offersLayer {
+	margin-left: -300px;
+	left: 50%;
+	width: 600px;
+	height: 420px;
+	z-index: 500;
+}
+#offersLayer .header {
+	margin: 0;
+	padding: 5px 6px 5px 6px;
+	border: 1px solid #a7a7a7;
+	border-bottom: 0;
+	font-size: 1.1em;
+	font-weight: bold;
+	background-color: #eaf2f6;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkMmU5ZjQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,#fff 0,#d2e9f4 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#d2e9f4));
+	background: -webkit-linear-gradient(top,#fff 0,#d2e9f4 100%);
+	background: -o-linear-gradient(top,#fff 0,#d2e9f4 100%);
+	background: -ms-linear-gradient(top,#fff 0,#d2e9f4 100%);
+	background: linear-gradient(to bottom,#fff 0,#d2e9f4 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#d2e9f4',GradientType=0);
+}
+.header #plan_title {
+	padding: 5px 5px 2px 5px;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+#offersLayer .classTitle {
+	padding: 8px 12px 8px 12px;
+	background: -moz-linear-gradient(top,#fff 0,#dededf);
+	background: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#dededf));
+	background-color: #dededf;
+	border-right: 1px solid #a7a7a7;
+	border-top: 1px solid #a7a7a7;
+	border-left: 1px solid #a7a7a7;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+#offersLayer .offersList {
+	border-top: 1px solid #a7a7a7;
+	background-color: #fff;
+	height: 348px;
+	overflow: auto;
+}
+#offersLayer .offersTable {
+	margin: 0 0 15px 0;
+	border: 1px solid #a7a7a7;
+	width: 100%;
+}
+#offersLayer .offersTable td {
+	padding: 8px 10px 8px 10px;
+	border-right: 1px solid #efefef;
+	border-bottom: 1px solid #efefef;
+	background-color: #fff;
+}
+#offersLayer .offersTable td.brand {font-weight: bold}
+#offersLayer .offersTable td.brand a {display: block}
+#error_cover {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	background: transparent;
+	z-index: 1100;
+}
+#error_box {
+	border-radius: 7px;
+	-moz-border-radius: 7px;
+	box-shadow: 0 0 8px #cdcdcd;
+	background: #efefef;
+	border: 1px solid #666;
+	background: #fff;
+	width: 300px;
+	z-index: 1200;
+	position: fixed;
+	left: 50%;
+	margin-left: -150px;
+	top: 50%;
+	margin-top: -90px;
+	padding: 10px;
+	text-align: left;
+	font-size: 1.1em;
+	background-color: #dce8d0;
+	background: -moz-linear-gradient(top,#fff 0,#efefef);
+	background: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#efefef));
+}
+#error_ok {
+	display: block;
+	background: -moz-linear-gradient(top,#7db4e4 0,#195d87 50%,#144d73 55%,#195d87 100%);
+	background: -webkit-gradient(linear,left top,left bottom,from(#7db4e4),color-stop(0.50,#195d87),color-stop(0.55,#144d73),to(#195d87));
+	padding: 10px;
+	color: #fff;
+	border-radius: 7px;
+	-moz-border-radius: 7px;
+	box-shadow: 1px 1px 3px #cdcdcd;
+	font-weight: bold;
+	width: 60px;
+	margin: auto;
+	text-align: center;
+	margin-top: 15px;
+	border: 1px solid #a7a7a7;
+}
+a#error_ok:hover {text-decoration: none}
+.stateName {color: #666;font-weight:normal}
+#plan_title_state {font-weight: normal}
+.drug_h1 h1 .spacer {clear: none}
+#emailform .legaltext {text-align: left}
+
+/* position DFP ads */
+#ads-pos-520 {
+	width: 220px;
+	float: right;
+	padding: 0 0 10px 10px;
+}
+#rightcol #ads-pos-520 {
+	float: none;
+	padding: 0 0 15px 0;
+}
+#adspace420 {text-align: center;}
+#ads-pos-520.AdUnit {background-image: none;}
+.textDriver {
+	margin: 10px 10px 12px 10px;
+	padding: 6px 8px;
+	border: 1px solid #e2e2e2;
+	background: #f7f7f7;
+	color: #444;
+	font-size: 1.1em;
+	position: relative;
+}
+.textDriver a {
+	color: #007cb0;
+	text-decoration: underline !important;
+}
+.textDriver a.driverLink {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	text-decoration: none;
+	z-index: 10;
+}
+.textDriver .intro, .textDriver .text {
+	margin: 0 5px 0 0;
+	display: inline;
+}
+.textDriver .action {
+	padding: 0;
+	display: inline;
+	white-space: no-wrap;
+}
+.textDriver .action a {font-weight: normal;}
+.textDriver .about, #articleContent .textDriver .about {
+	margin: 0;
+	padding: 0 0 6px 0;
+}
+.textDriver .about a, #articleContent .textDriver .about a {text-decoration: none;}
+.textDriver .ifiTag {
+	margin: 0;
+	padding: 0;
+	color: #797979;
+	font-size: 0.85em;
+	font-style: italic;
+	text-align: left;
+}
+.textDriver.longform {
+	margin: 0 10px 15px 10px;
+	padding: 8px 10px 6px 10px;
+}
+.textDriver.longform .text {
+	margin: 0 4px 0 0;
+	display: inline;
+}
+.textDriver.longform .action {
+	padding: 0;
+	display: inline;
+	white-space: nowrap;
+}
+.textDriver.longform .action a {
+	font-size: 0.95em;
+	font-weight: normal;
+}
+.textDriver.longform .ifiTag {
+	margin: 2px 0 0 0;
+	padding: 0;
+	font-size: 0.75em;
+	text-align: right;
+}
+#ads-pos-420 {
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+/* (start) for sticky header only */
+.stickHeader {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background-color: #fff;
+	z-index: 500;
+}
+
+#adtagheader.stickHeader {
+	margin-top:0;
+}
+.unStickHeader {
+	position: relative;
+	background-color: #fff;
+	top: auto;
+}
+
+#leftcol #ads-pos-141 {margin-top:10px}

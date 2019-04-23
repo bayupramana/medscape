@@ -1,0 +1,600 @@
+html, body {
+    height: 100%;
+}
+body {
+    padding:0;
+    margin:0;
+    font-size: 76%;
+    min-width: 320px;
+}
+
+#bodypadding{
+	padding: 0 !important;
+	margin:0 !important;
+	width: 100% !important;
+    font-size: 1.05em;
+}
+#medscape_login ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.block-hd{
+	font-family: "Proxima Nova Rg";
+	font-size: 17px;
+	text-align: center;
+	color: #000000;	
+}
+.txt1{
+	font-weight: 600;
+	padding: 16px 25.5px;
+}
+
+.txt2{
+	line-height: 1.18;
+	width: 208px;
+    margin: auto;
+    padding-top: 17px;
+    padding-bottom: 3px;
+}
+.txt3{
+	padding: 15px 61.5px 8px 61.5px;
+}
+.txt4{
+	font-size: 16px;
+	font-weight: 600;
+	padding-top: 15px;
+}
+.txt5{
+	font-size: 17px;
+	line-height: 1.18;
+	margin: auto;
+    padding-top: 17px;
+    padding-bottom: 23px;
+}
+
+#blockpadding{
+	background-color: #e8f1f5;
+	padding-bottom: 18px;
+}
+/* #medscape_login{
+	padding:0 calc((100% - 600px)/2);
+	
+}  */
+#login_box{
+	background-color: #ffffff;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    border: solid 1px #e0e0e0;
+}
+.tab-wrap{
+	height: 52px;
+    margin-bottom: 17px;
+}
+
+#medscape_login .tabs{
+	float: left;
+    padding-top: 19px;
+    box-sizing: border-box;
+    height: 52px;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Proxima Nova Rg";
+	font-size: 12px;
+	line-height: 1.0;
+}
+#medscape_login .tab-login{
+	width:38%;	
+	font-weight: bold;
+	color: #3f3f3f;
+	
+}
+#medscape_login .tab-reg{
+	width:62%;	
+	background-color: #edf1f5;
+	font-weight: 600;
+	letter-spacing: -0px;
+	color: #4e5b6b;	
+    transition: 0.5s;
+}
+#medscape_login .tab-reg:hover{
+    background: #c9d3de;
+    color: #4e5b6b;
+}
+#medscape_login .tab-reg a{
+    color: #4e5b6b;    
+}
+
+#medscape_login .inputrow {
+	position: relative;
+	padding:10px 0;
+	margin: 0 15px;
+}
+#medscape_login .inputrow input[type="text"], #medscape_login .inputrow input[type="password"] {
+	border-radius: 3px;
+	outline: none;
+}
+#regularEmail,#password,#lwpdEmail,#fgpwEmail,#userId2,#userId3{
+    border: solid 1px #d0d8e7;
+}
+#medscape_login .inputrow input[type="text"]:focus:not(.redBorder), #medscape_login .inputrow input[type="password"]:focus:not(.redBorder){
+	border: solid 1px #005b81;
+} 
+.fld{
+	height: 45px;
+	width: 100%;
+	font-family: "Proxima Nova Rg";
+	font-size: 16px;
+    padding: 0 12px;
+    box-sizing: border-box;  
+}
+
+
+.fld:focus ~ .floating-label, .fld:not(.empty) ~ .floating-label{
+	top: 2px;
+    left: 12px;
+    font-size: 12px;
+}
+
+.floating-label{
+	position: absolute;
+    pointer-events: none;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    color: #5e5e5e;
+    top: 25px;
+    left: 12px;
+    transition: 0.2s ease all;
+    background-color:#ffffff;
+    font-family: "Proxima Nova Rg";
+}
+.togglePassword{
+	position: absolute;
+    right: 10px;
+    top: 26px;
+    z-index: 2;
+    cursor: pointer;
+    height: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #007cb0 !important;
+
+}
+
+#hideText {
+    display: none;
+}
+
+#medscape_login .loginBtn {
+	padding-bottom: 27px;
+    padding-left: calc((100% - 208px)/2);
+	margin-top: 13px;
+}
+
+#medscape_login input[type="submit"], #medscape_login input[type="button"]{
+	width: 208px;
+    height: 45px;
+	border: 0 none;
+    font-family: proxima_nova_rgregular;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+	text-align: center;
+    font-size: 17px;
+    transition:0.5s;
+    margin:0;
+    padding: 0;
+}
+
+#login_temp_link a, #forgot_password_or_u a{
+    color: #007cb1;
+}
+#login_temp_link a:hover, #forgot_password_or_u a:hover{
+    text-decoration: underline;
+}
+
+#medscape_login .link-wrapper{
+	text-align: center;
+	
+}
+#medscape_login #login_temp_link, #forgot_password_or_u{
+	font-family: Arial;
+	font-size: 14px;
+	color: #007cb1;
+	cursor: pointer;
+}
+#medscape_login .newsign{
+	font-family: Roboto;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #d0011b;
+    color: #ffffff;
+    padding: 3px 2px;
+    margin-left: 3px;
+    vertical-align: top;
+}
+#medscape_login #forgot_password_or_u{
+	font-family: Arial;
+	font-size: 14px;
+	text-align: center;
+	color: #007cb1;
+	margin:20px 0 35px 0;
+}
+#login_temp_request,#forgot_password_request{
+	margin-top:7px;
+}
+
+#blockpadding2 {
+	padding:0px;
+    margin:0px;
+    font-family:arial, sans-serif;
+    font-size: 1.05em;
+    background-color: #f8f8f8;
+}
+
+#blockpadding2 .div_regisbtn{
+	border-radius: 3px;
+    border: solid 1px #007cb1;
+    font-family: proxima_nova_rgregular;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 45px;
+    text-align: center;
+    color: #007cb0;
+    height: 45px;
+    margin: auto;
+    width: 280px;
+    cursor: pointer;
+}
+.registerbtn{
+    display: block;
+    width: 100%;
+    height:100%;
+    color: #007cb0;
+}
+/* section news perspective css */
+section{
+	overflow: hidden;
+    position: relative;
+    padding: 10% 0 3%;
+}
+
+.about-section{
+	position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 96%;
+}
+
+.news-perspective{
+    background-color: #f8f8f8;
+}
+
+.section-header{
+	font-family: proxima_nova_ththin;
+    font-size: 2.5em;
+    text-align: center;
+    color: #005b81;
+    line-height: 1.1;
+}
+
+.section-subheader{
+	font-family: proxima_nova_rgregular;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 4px 0 1em 0;
+}
+
+.tab-tittle-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    border-bottom: solid 1px #dddddd;
+    list-style: none;
+    padding: 0;
+}
+
+.tab-title {
+	font-family: proxima_nova_ltlight;
+    font-size: 1em;
+    text-align: center;
+    margin: 0 1em;
+    color: #005b81;
+    cursor: pointer;
+}
+
+.news-title{
+	font-family: proxima_nova_rgregular;
+    font-size: 1.4185em;
+    padding: 0;
+    margin-bottom: 0.3rem;
+    text-align: left;
+}
+
+.news-description, .item-description{
+    padding: 0 5% 0 0;
+    font-size: 1em;
+    color: #666666;
+    text-align: left;
+    margin-bottom: 1em;
+    font-family: proxima_nova_ltlight;
+    padding-left: 0;
+}
+
+.news-layer {
+    height: 250px;
+    width: 465px;
+}
+
+/* section drugs */
+.d-block {
+    width: 500px;
+    height: 480px;
+}
+
+.item-title{
+	text-align: left;
+	font-family: proxima_nova_rgregular;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+    padding-left: 0;
+}
+
+.item-description{
+    font-size: 1.5em;
+    padding: 0 5%;
+}
+
+/* section cme */
+.cme-and-education {
+    background-color: #dbe5ec;
+}
+
+.cme-and-education .about-section{
+    overflow: visible;
+}
+
+.cme-img-container {
+    position: relative;
+}
+
+.cme-img1{
+    background-size: contain;
+}
+
+.cme-img1 img{
+    width: 570px;
+    height: 360px;
+}
+
+.cme-container{
+    font-family: "proxima_nova_rgregular";
+}
+.cme-item {
+    margin: 0 1%;
+    min-width: 300px;
+}
+.cme-description {
+    font-size: 1.4em;
+}
+.cme-number-container {
+    position: relative;
+}   
+
+.cme-credit {
+    font-family: proxima_nova_ltsemibold;
+    font-size: 2em;
+    line-height: 1.1;
+    text-align: center;
+    color: #751400;
+}
+.accreditation {
+    font-size: 1.2em;
+    line-height: 1.3;
+    color: #777777;
+    text-align: left;
+    padding-left: 17.7px;
+}
+
+/* section consult */
+
+.consult {
+    margin-bottom: -38px;
+}
+
+.item-title {
+    margin-bottom: 4.8px;
+    padding-left: 0;
+}
+.consult-title {
+    font-family: proxima_nova_ththin;
+    font-size: 30px;
+}
+
+/* section pba */
+.pba {
+    background-image: linear-gradient(to bottom, #ffffff, #eef2f4);
+}
+look-description{
+    font-family: proxima_nova_ltlight;
+    text-align: left;
+    padding: 0 10px;
+    width: 95%;
+    color: #666666;
+}
+
+/* section apps */
+.apps-at-your-fingertips {
+    padding: 5% 0 0 0;
+    background-image: linear-gradient(to bottom, #ffffff, #eef2f4);
+}
+.apps-header {
+    font-size: 2.2066em;
+}
+
+.app-details {
+    flex: 1 1;
+    opacity: 0;
+}
+
+.app-review {
+    font-family: proxima_nova_ltlight;
+    text-align: center;
+    opacity: 0;
+}
+.download-times {
+    font-size: 4em;
+    line-height: 1.1;
+    color: #005b81;
+}
+.download {
+    font-size: 2em;
+    line-height: 1.2;
+    padding-bottom: 1em;
+    border-bottom: solid 1px black;
+}
+.rating {
+    padding-top: 1em;
+    font-size: 1.5em;
+    line-height: 1.2;
+    color: #005b81;
+}
+.stars {
+    color: #005b81;
+    font-size: 16px;
+    position: relative;
+}
+.half-star {
+    position: relative;
+}
+
+/* section ipad */
+.global-resource {
+    padding-bottom: 0;
+    background-image: linear-gradient(to bottom, #f8f8f8, #e7e7e7);
+}
+.global-resource-header-content{
+    display: inline-block;
+    width: 100%;
+    font-size: 0.8em;
+}
+.global-resource-header {
+    text-align: center;
+}
+.global-resource-subheader {
+    font-size: 1.5761em;
+}
+.global-resource .tab-item-container {
+    height: 150px;
+}
+
+.tab-title-container {
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0;
+    border-bottom: solid 1px #dddddd;
+    list-style: none;
+    padding: 0;
+}
+
+.tab-item-container{
+    width: 100%;
+    position: relative;    
+}
+
+.tab-item {
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.active-tab {
+    opacity: 1;
+}
+
+.ipad-mask {
+    transition: opacity 1s linear;
+}
+
+.global-img{
+    padding-top: 30px;
+}
+
+/* section info-contact */
+.policy {
+    border-bottom: solid 1px #cccccc;
+    border-right: none;
+    padding-bottom: 20px;
+}
+
+.info-header {
+    font-size: 1.5em;
+    line-height: 1.2;
+    text-align: left;
+    color: #000000;
+}
+
+.link{
+    font-size: 13px;
+    text-align: left;
+    line-height: 2;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.corporate-link {
+    color: #007cb0 !important;
+    cursor: pointer;
+}
+
+.info-contact {
+    background-color: #f4f6fa;
+}
+
+.info-item{
+    margin: 20px;
+}
+
+.info-item ul{
+    font-size: 13px;
+    text-align: left;
+    line-height: 2;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.email-guide, .email {
+    line-height: 1.2;
+}
+
+.info-and-contact .about-section-wrapper .regular {
+    font-family: proxima_nova_rgregular;
+    margin: 0;
+    padding: 0;
+}
+
+.email-address {
+    font-size: 18px;
+}
+.strong {
+    font-size: 1.5em;
+}
+
+.empty-info-header {
+    display: none;
+}
